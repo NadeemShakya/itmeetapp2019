@@ -1,13 +1,11 @@
 
 import React, {Component} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-
-
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Let's Build Our IT MEET 2019 Application.</Text>
+        <Text style={styles.welcome}>Build Our IT MEET 2019 Application.</Text>
       </View>
     );
   }
