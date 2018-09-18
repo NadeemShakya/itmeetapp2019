@@ -1,0 +1,3 @@
+rootProject.name = 'itmeet2019'
+
+include ':app'
