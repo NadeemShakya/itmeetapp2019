@@ -1,28 +1,38 @@
-
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Platform, StyleSheet, Text, View, TouchableHighlight, Alert} from 'react-native';
+import {createStackNavigator} from 'react-navigation'
+import VotingScreen from './src/components/voting';
+import VoteNow from './src/components/VoteNow';
+import Register from './src/components/webview';
+import HomeScreen from './src/components/Home';
+
+
 export default class App extends Component {
+  
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Build Our IT MEET 2019 Application.</Text>
-      </View>
+      <AppStackNavigator />
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#02b875',
+const AppStackNavigator = createStackNavigator({
+  Home:{
+    screen: HomeScreen
   },
-  welcome: {
-    fontSize: 15,
-    textAlign: 'center',
-    margin: 10,
-    color: '#fff'
+
+  Voting: {
+    screen: VotingScreen
+  },
+
+  VoteNow:{
+    screen: VoteNow
+  },
+
+  Register: {
+    screen: Register
   }
 
-});
+})
+
+
