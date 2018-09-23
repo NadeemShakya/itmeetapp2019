@@ -1,4 +1,4 @@
-# Mobile Application for IT MEET 2019.
+# Mobile Application for IT MEET v8.0.
 
 # Tools Used
   <ul>
