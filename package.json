@@ -1,5 +1,5 @@
 {
-  "name": "itmeet2019",
+  "name": "ITMEET",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,7 +8,10 @@
   },
   "dependencies": {
     "react": "16.5.0",
-    "react-native": "0.57.0"
+    "react-native": "0.57.0",
+    "react-native-elements": "^0.19.1",
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "^2.14.2"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
