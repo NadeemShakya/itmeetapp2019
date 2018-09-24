@@ -23,7 +23,7 @@ export default class App extends Component {
                 <View style={styles.leftCard}>
                 <Image 
                     style={{width: 100, height: 60, resizeMode: 'contain'}}
-                    source={require('../assets/Photography.png')}
+                    source={require('../images/events/Photography.png')}
                 />
                 <Text style={{fontSize: 18, color: '#06525F',textAlign: 'center',marginTop: 8}}>Photography</Text>
                 <Text style={{fontSize: 18, color: '#06525F',textAlign: 'center', marginTop: -8}}>Contest</Text>
@@ -54,7 +54,7 @@ export default class App extends Component {
                 <View style={styles.leftCard}>
                 <Image
                     style={{width: 100, height: 60, resizeMode: 'contain'}}
-                    source={require('../assets/gaming.png')}
+                    source={require('../images/events/gaming.png')}
                 />
                 <Text style={{fontSize: 18, color: '#06525F',textAlign: 'center',marginTop: 8}}>Project</Text>
                 <Text style={{fontSize: 18, color: '#06525F',textAlign: 'center', marginTop: -8}}>Competition</Text>
