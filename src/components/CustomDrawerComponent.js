@@ -5,9 +5,15 @@ import {
     View,
     TouchableHighlight,
     ScrollView,
-    Image
+    Image,
+    StatusBar
 } from 'react-native';
 import {NavigationActions} from 'react-navigation';
+import Icon from 'react-native-vector-icons/FontAwesome';
+// IT MEET logo
+import logo from '../images/logo.png';
+// Drawer Background Image
+import navigationBackground from '../images/navigationBackground.jpg';
 
 class CustomDrawerComponent extends Component {
   navigateToScreen = (route) => () => {
@@ -19,11 +25,11 @@ class CustomDrawerComponent extends Component {
   render() {
     return(
       <ScrollView style = {{backgroundColor: '#f2f2f2', height: '100%'}}>
+        <StatusBar backgroundColor = '#06525F' barStyle = 'light-content'/>
         <View style = {{heght: 200, justifyContent:'center', alignItems:'center'}}>
-          
-          <Image source = {require('../images/navigationBackground.jpg')} style = {{width:'100%', height:'100%', maxWidth: 'auto', maxHeight:'auto', position:'absolute'}}/>
-          <Image source = {require('../images/ITMEETLOGO.png')} style = {{width: 120, height:120}}/>
-          <Text style = {{color: '#fff', fontSize:13, margin:10}}>DISCOVER. INNOVATE. LEAD</Text>
+          <Image source = {navigationBackground} style = {{width:'100%', height:'100%', maxWidth: 'auto', maxHeight:'auto', position:'absolute'}}/>
+          <Image source = {logo} style = {{width: 120, height:120, marginTop:15}}/>
+          <Text style = {{color: '#fff', fontSize:13, margin:10}}>Digitalize. Innovate. Lead</Text>
         </View> 
         {/* Register Card Section Start */}
         <View style = {styles.topCard}>
@@ -40,13 +46,13 @@ class CustomDrawerComponent extends Component {
         <View style = {styles.middleCard} >
           <TouchableHighlight onPress = {this.navigateToScreen('Home')}>
             <View style = {styles.card} >
-              <Image source = {require('../images/Home.png')} style = {styles.cardImage}/>
+              <Icon name = "home" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Home</Text>
             </View>
           </TouchableHighlight>        
-          <TouchableHighlight onPress = {this.navigateToScreen('Events')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('Events')}>
             <View style = {styles.card} >
-              <Image source = {require('../images/Events.png')} style = {styles.cardImage}/>
+              <Icon name = "calendar" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Events</Text>
             </View>
           </TouchableHighlight>       
@@ -64,7 +70,7 @@ class CustomDrawerComponent extends Component {
           </TouchableHighlight> 
           <TouchableHighlight onPress = {this.navigateToScreen('BusRoute')}>
             <View style = {styles.card} >
-              <Image source = {require('../images/BusRoute.png')} style = {styles.cardImage}/>
+              <Icon name = "bus" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Bus Route</Text>
             </View>
           </TouchableHighlight> 
@@ -75,7 +81,7 @@ class CustomDrawerComponent extends Component {
         <View style = {styles.bottomCard}>
           <TouchableHighlight onPress = {this.navigateToScreen('Share')}>
             <View style = {styles.card} >
-              <Image source = {require('../images/Share.png')} style = {styles.cardImage}/>
+              <Icon name = "share" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Share</Text>
             </View>
           </TouchableHighlight>   
@@ -87,13 +93,13 @@ class CustomDrawerComponent extends Component {
           </TouchableHighlight>                    
           <TouchableHighlight onPress = {this.navigateToScreen('VisitUs')}>
             <View style = {styles.card} >
-              <Image source = {require('../images/VisitUs.png')} style = {styles.cardImage}/>
+              <Icon name = "share" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Visit Us</Text>
             </View>
           </TouchableHighlight>               
           <TouchableHighlight onPress = {this.navigateToScreen('AboutUs')}>
             <View style = {styles.card} >
-              <Image source = {require('../images/AboutUs.png')} style = {styles.cardImage}/>
+              <Icon name = "users" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >About Us</Text>
             </View>
           </TouchableHighlight>  
@@ -139,14 +145,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff'
   }, 
   cardImage: {
-    width: 25,
-    height: 25,
-    marginRight: 10,
-    marginLeft: 5
+    width: 30 ,
+    height: 30,
   },
   cardTopic: {
     color: '#06525F',
-    fontSize:20
+    fontSize:20,
+    marginLeft: 15
   }
 })
 export default CustomDrawerComponent;

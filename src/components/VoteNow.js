@@ -12,17 +12,16 @@ export default class VoteNow extends Component {
           headerTitleStyle: {
               fontSize: 22,
           }
-          
     }
   render() {
     return (
         <View>
             <View style = {{alignItems: 'center'}}>
                 <TextInput placeholder = "Search.." style = {{marginTop: 10, height: 45, width: '92%',fontSize: 20,padding: 10, backgroundColor: '#fff',borderWidth: 1, borderRadius: 5  }} />
-                <Image 
+                {/* <Image 
                     style={{width: 30, height: 30, resizeMode: 'contain', position: 'absolute', right: 25,marginTop:17}}
                     source={require('../images/Search.png')}
-                />
+                /> */}
             </View>
             <View  style={{alignItems: 'center'}}>
                 <View style={styles.card}>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
   View,
   Text,
@@ -6,7 +6,6 @@ import {
   ScrollView,
   StyleSheet,
   Dimensions,
-  AppRegistry,
   StatusBar,
   Animated
 } from 'react-native';
@@ -30,7 +29,7 @@ LOGO_MAX_HEIGHT = 230;
 LOGO_MIN_WIDTH = 100;
 LOGO_MIN_HEIGHT = 100;
 
-class ITMeet extends React.Component {
+export default class ITMeet extends Component {
   constructor(props) {
     super(props);
 
@@ -289,12 +288,9 @@ class ITMeet extends React.Component {
   }
 }
 
-export default ITMeet;
 
 const styles = StyleSheet.create({
   container : {
     backgroundColor : '#c4e4ff'
   }
 });
-
-AppRegistry.registerComponent('ITMeet_App', () => ITMeet);

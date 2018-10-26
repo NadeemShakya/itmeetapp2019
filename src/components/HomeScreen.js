@@ -6,11 +6,16 @@ import {
     Image,
     TouchableHighlight
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+// IT MEET logo
+import logo from '../images/logo.png';
+
 class HomeScreen extends Component {
     static navigationOptions ={
         title: 'Home ',       
         drawerIcon: (
-            <Image source = {require('../images/ITMEETLOGO.png')} style = {{width:50, height:50}} />
+            <Image source = {logo} style = {{width:50, height:50}} />
         )
     }
     render() {
@@ -20,14 +25,11 @@ class HomeScreen extends Component {
                 <View style = {styles.header}>
                     <View style = {styles.menuIcon}>
                         <TouchableHighlight underlayColor = 'transparent' onPress = {() => this.props.navigation.openDrawer()} >
-                            <Image
-                                style={{width: 30, height: 30, marginLeft:10}}
-                                source={require('../images/menu.png')}
-                            />
+                            <Icon  name = "bars" size = {35} color = "#FFF" />
                         </TouchableHighlight>
                     </View>
                     <View style = {styles.logo}>
-                        <Image source = {require('../images/ITMEETLOGO.png')} style = {{width: 45, height:45, marginLeft:-22.5}} />
+                        <Image source = {logo} style = {{width: 45, height:45, marginLeft:-22.5}} />
                     </View>
                 </View>
                 {/* Header Division End */}
@@ -51,7 +53,8 @@ const styles = StyleSheet.create({
     menuIcon: {
         flex:1,
         opacity:.7,
-        paddingTop:15
+        paddingTop:15,
+        paddingLeft:15
     },
     logo: {
         flex:1,
