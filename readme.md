@@ -19,7 +19,7 @@
 <img src = 'Screenshots/3.jpg'>
 
 ### Events Page
-<img src = 'Screenshots/4.png'>
+<img src = 'Screenshots/4.jpg' width = '100px'>
 
 ### Individual Event Page
 <img src = 'Screenshots/5.jpg'>
