@@ -19,10 +19,10 @@
 <img src = 'Screenshots/3.jpg'>
 
 ### Events Page
-<img src = 'Screenshots/4.jpg' width = '250'>
+<img src = 'Screenshots/4.jpg' width = '350'>
 
 ### Individual Event Page
-<img src = 'Screenshots/5.jpg'>
+<img src = 'Screenshots/5.jpg' width = '350'>
 
 ### Voting Page
 <img src = 'Screenshots/6.jpg'>
