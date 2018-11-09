@@ -1,21 +1,21 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, TextInput,TouchableOpacity, Image} from 'react-native';
+import {TouchableHighlight, StyleSheet, Text, View, TextInput,TouchableOpacity, Image} from 'react-native';
 
 export default class VoteNow extends Component {
-    static navigationOptions = {
-        headerStyle: {
-            backgroundColor: '#06525F',
-            height: 70,
-          },
-          headerTintColor: '#fff',
-          headerTitle: 'Photography Competition',
-          headerTitleStyle: {
-              fontSize: 22,
-          }
-    }
   render() {
     return (
         <View>
+            {/* Header Component Start */}
+            <View style = {styles.header}>
+                <TouchableHighlight underlayColor = 'transparent' onPress = {() => this.props.navigation.goBack(this.props.navigation.state.key)} style = {styles.backIconImage} >
+                    <Image
+                        style={{width: 20, height: 20, marginRight:15}}
+                        source={require('../images/leftarrowWhite.png')}
+                    />
+                </TouchableHighlight>
+                <Text style = {{color: '#fff', fontSize: 20}}> Photography Competition</Text>
+            </View>
+            {/* Header Component End */}            
             <View style = {{alignItems: 'center'}}>
                 <TextInput placeholder = "Search.." style = {{marginTop: 10, height: 45, width: '92%',fontSize: 20,padding: 10, backgroundColor: '#fff',borderWidth: 1, borderRadius: 5  }} />
                 {/* <Image 
@@ -54,8 +54,6 @@ export default class VoteNow extends Component {
                     </TouchableOpacity>
                 </View>
             </View>
-
-            
         </View>
     );
   }
@@ -87,11 +85,16 @@ const styles = StyleSheet.create({
       marginTop: 10
       
       },
-
     texts: {
       fontSize: 20,
       color: '#fff'
-      
-    }
+    },
+    header: {
+        backgroundColor:'#06525F',
+        flexDirection: 'row',
+        height: 60,
+        alignItems: 'center',  
+        paddingLeft:15
+    },       
 
 });
