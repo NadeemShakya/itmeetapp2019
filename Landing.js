@@ -12,7 +12,7 @@ import SponsersScreen from './src/components/SponsersScreen';
 import VisitUsScreen from './src/components/VisitUsScreen';
 import AboutUsScreen from './src/components/AboutUsScreen';
 import EventDetail from './src/components/EventDetail';
-import VotingScreen from './src/components/voting';
+import Voting from './src/components/Voting';
 import VoteNow from './src/components/VoteNow';
 import Register from './src/components/webview';
 
@@ -32,7 +32,7 @@ const RootDrawer = createDrawerNavigator(
     Register: Register,
     Events: EventsScreen,
     News: NewsScreen,
-    Voting: VotingScreen,
+    Voting: Voting,
     VoteNow: VoteNow,
     BusRoute: BusRouteScreen,
     Share: ShareScreen,

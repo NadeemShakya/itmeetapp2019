@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View, Image, TouchableOpacity, WebView} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity, TouchableHighlight, ScrollView} from 'react-native';
 
 
-export default class App extends Component {
-    static navigationOptions = {
-        headerStyle: {
-            backgroundColor: '#06525F',
-            height: 70,
-          },
-          headerTintColor: '#fff',
-          headerTitle: 'Voting Section',
-          headerTitleStyle: {
-              fontSize: 22,
-          }
-          
-    }
+export default class Voting extends Component {
   render() {
     return (
       <View style={styles.container}>
+        {/* Header Component Start */}
+        <View style = {styles.header}>
+            <TouchableHighlight underlayColor = 'transparent' onPress = {() => this.props.navigation.goBack(this.props.navigation.state.key)} style = {styles.backIconImage} >
+                <Image
+                    style={{width: 20, height: 20, marginRight:15}}
+                    source={require('../images/leftarrowWhite.png')}
+                />
+            </TouchableHighlight>
+            <Text style = {{color: '#fff', fontSize: 22}}>Voting Section</Text>
+        </View>
+        <ScrollView>
+        {/* Header Component End */}
           <View style={styles.card}>
             <View style={styles.insideCard}>
                 <View style={styles.leftCard}>
@@ -38,7 +38,7 @@ export default class App extends Component {
                 <View style={styles.rightCard}>
                 
                 <View>
-                    <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</Text>
+                    <Text>Lorem Ipsum is simply dummy text ofnting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</Text>
                 </View>
                 <TouchableOpacity onPress = {() => this.props.navigation.navigate('VoteNow') }>
                         <View style = {styles.button1}>
@@ -73,6 +73,7 @@ export default class App extends Component {
                 </View>
             </View>
           </View>
+        </ScrollView>  
       </View>
     );
 }
@@ -80,16 +81,18 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
     container: {
-      alignItems: 'center',
+      flex: 1,
       backgroundColor: '#f2f2f2',
     },
     card:{
         marginTop: 20,
+        marginLeft: '5%',
         height: 177,
-        width: '92%',
+        width: '90%',
         backgroundColor: '#fff',
         shadowColor: '#000',
         elevation: 2,
+        flex:1
     },
     insideCard:{
         flex:1,
@@ -100,8 +103,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 10
-        
-        
     },
     middleLine:{
         flex: 0.1,
@@ -117,7 +118,6 @@ const styles = StyleSheet.create({
         paddingTop: 20,
         alignItems: 'flex-end',
         justifyContent: 'space-between'
-        
     },
     button1: {
       height: 40,
@@ -126,12 +126,17 @@ const styles = StyleSheet.create({
       backgroundColor: "#06525F",
       alignItems: 'center',
       padding: 5,
-      
       },
 
     texts: {
       fontSize: 18,
       color: '#fff'
-      
-    }
+    },
+    header: {
+        backgroundColor:'#06525F',
+        flexDirection: 'row',
+        height: 60,
+        alignItems: 'center',  
+        paddingLeft:15
+    },    
 });
