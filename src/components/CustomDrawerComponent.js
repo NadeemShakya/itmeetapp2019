@@ -25,7 +25,7 @@ class CustomDrawerComponent extends Component {
   render() {
     return(
       <ScrollView style = {{backgroundColor: '#f2f2f2', height: '100%'}}>
-        <StatusBar backgroundColor = '#06525F' barStyle = 'light-content'/>
+        <StatusBar backgroundColor = '#043F49' barStyle = 'light-content'/>
         <View style = {{heght: 200, justifyContent:'center', alignItems:'center'}}>
           <Image source = {navigationBackground} style = {{width:'100%', height:'100%', maxWidth: 'auto', maxHeight:'auto', position:'absolute'}}/>
           <Image source = {logo} style = {{width: 120, height:120, marginTop:15}}/>

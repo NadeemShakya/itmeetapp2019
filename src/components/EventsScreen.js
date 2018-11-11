@@ -503,7 +503,6 @@ class EventsScreen extends Component {
                     () => this.DetectOrientation()
                 )
             }>
-            <StatusBar backgroundColor = '#06525F' barStyle = 'light-content'/>
 
             {/* Header Component Start */}
             <View style = {styles.header}>
