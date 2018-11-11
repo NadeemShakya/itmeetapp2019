@@ -1,0 +1,3 @@
+Standard Color of the Application: '#06525F'
+Status Bar Color: '#043F49'
+Light Grey Color: '#f2f2f2'
