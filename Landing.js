@@ -14,6 +14,7 @@ import AboutUsScreen from './src/components/AboutUsScreen';
 import EventDetail from './src/components/EventDetail';
 import Voting from './src/components/Voting';
 import VoteNow from './src/components/VoteNow';
+import QRCodeScanner from './src/components/QRCodeScanner';
 import Register from './src/components/webview';
 
 class App extends Component {
@@ -39,7 +40,8 @@ const RootDrawer = createDrawerNavigator(
     Sponsers: SponsersScreen,
     VisitUs: VisitUsScreen,
     AboutUs: AboutUsScreen ,
-    EventDetail: EventDetail
+    EventDetail: EventDetail,
+    QRCodeScanner: QRCodeScanner
   },
   // DrawerNavigatorConfg
   {

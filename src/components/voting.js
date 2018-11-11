@@ -18,6 +18,7 @@ export default class Voting extends Component {
         </View>
         <ScrollView>
         {/* Header Component End */}
+        
           <View style={styles.card}>
             <View style={styles.insideCard}>
                 <View style={styles.leftCard}>
@@ -40,7 +41,7 @@ export default class Voting extends Component {
                 <View>
                     <Text>Lorem Ipsum is simply dummy text ofnting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</Text>
                 </View>
-                <TouchableOpacity onPress = {() => this.props.navigation.navigate('VoteNow') }>
+                <TouchableOpacity onPress = {() => this.props.navigation.navigate('QRCodeScanner') }>
                         <View style = {styles.button1}>
                             <Text style = {styles.texts}>Vote Now</Text>
                         </View>
@@ -65,7 +66,7 @@ export default class Voting extends Component {
                 <View>
                     <Text>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</Text>
                 </View>
-                    <TouchableOpacity onPress = {() => this.props.navigation.navigate('VoteNow') }>
+                    <TouchableOpacity onPress = {() => this.props.navigation.navigate('QRCodeScanner') }>
                         <View style = {styles.button1}>
                             <Text style = {styles.texts}>Vote Now</Text>
                         </View>
