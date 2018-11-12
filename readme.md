@@ -31,7 +31,7 @@
 <img src = 'Screenshots/7.jpg'>
 
 ### Voting Page
-<img src = 'Screenshots/8.jpg'>
+<img src = 'Screenshots/10.jpg'>
 
   
  
