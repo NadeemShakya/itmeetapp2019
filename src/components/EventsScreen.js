@@ -3,6 +3,7 @@ import {
     View,
     Text,
     StyleSheet,
+    TouchableOpacity,
     TouchableHighlight,
     Image,
     ScrollView,
@@ -520,13 +521,12 @@ class EventsScreen extends Component {
             <View style = {styles.body}>
                 <FlatList data = {this.events} extraData = {this.state} keyExtractor = {(item, index) => item.id} renderItem = {({item}) => 
                     <View style = {{padding:10}}>
-
-                        <TouchableHighlight onPress = {() => this.props.navigation.navigate('EventDetail', item)}  underlayColor = 'transparent'>
+                        <TouchableOpacity onPress = {() => this.props.navigation.navigate('EventDetail', item)} >
                         <View style = {[styles.eventCardBoxes, colorStyles]}>
                             <Image source = {item.icon}  style = {styles.eventIcons}/>
                             <Text style = {{textAlign:'center', color: '#06525F', fontSize:13}}>{item.title}</Text>
                         </View>
-                        </TouchableHighlight>
+                        </TouchableOpacity>
                         
                     </View>
                 } style = {{flex:1}} numColumns = {3}/>
@@ -555,10 +555,10 @@ const styles = StyleSheet.create({
         flex:1,
         margin:15,
         borderRadius:3,
-        shadowColor: 'black',
-        shadowOffset: {width:0, height: 0},
-        shadowOpacity:.16,
-        elevation:3,
+        // shadowColor: 'black',
+        // shadowOffset: {width:0, height: 0},
+        // shadowOpacity:.16,
+        // elevation:3,
         flexDirection:'row',
     },
     eventCardBoxes: {
@@ -569,6 +569,7 @@ const styles = StyleSheet.create({
         borderColor: '#000',
         alignItems: 'center', 
         justifyContent:'space-evenly',
+
     },
     
     eventIcons: {
