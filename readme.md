@@ -26,12 +26,8 @@
 
 ### Voting Page
 <img src = 'Screenshots/6.jpg'>
-
-### QRCodeScanner
+<br/>
 <img src = 'Screenshots/7.jpg'>
-
-### Voting Page
-<img src = 'Screenshots/10.jpg'>
 
   
  
