@@ -59,23 +59,25 @@ class NewsScreen extends Component {
 
     render() {
         return(
-            <ScrollView>
+            <View>
                 <Header title="News" onPress={() => this.props.navigation.goBack()}/>
-                <View style={styles.container}>
-                    <View style={styles.textInputContainer}>
-                        <TextInput style={styles.textInput} placeholder="Search..."/>
-                        <TouchableHighlight style={styles.searchImage}>
-                            <Image source={require('../images/Search.png')} style={{width:25,height:25}}/>
-                        </TouchableHighlight>
+                <ScrollView>
+                    <View style={styles.container}>
+                        <View style={styles.textInputContainer}>
+                            <TextInput style={styles.textInput} placeholder="Search..."/>
+                            <TouchableHighlight style={styles.searchImage}>
+                                <Image source={require('../images/Search.png')} style={{width:25,height:25}}/>
+                            </TouchableHighlight>
+                        </View>
                     </View>
-                </View>
-                <AccordionList
-                list={this.state.news}
-                header = {this.head}
-                // body={this.body}
-                onToggle={this.toggle}
-                />
-            </ScrollView>         
+                    <AccordionList
+                    list={this.state.news}
+                    header = {this.head}
+                    // body={this.body}
+                    onToggle={this.toggle}
+                    />
+                </ScrollView>   
+            </View>      
         );
     }
 }

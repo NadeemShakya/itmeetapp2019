@@ -4,12 +4,9 @@ import {
     Text,
     StyleSheet,
     TouchableOpacity,
-    TouchableHighlight,
     Image,
     ScrollView,
     FlatList,
-    Dimensions,
-    StatusBar
 } from 'react-native';
 import {NavigationActions} from 'react-navigation';
 import Header from './Header';
@@ -496,36 +493,36 @@ class EventsScreen extends Component {
             width: (parseInt(this.state.Width_Layout) - 90) / 3
         }
         return(
-            <ScrollView style = {styles.container} onLayout = {(event) => 
-                this.setState(
-                    {
-                    Width_Layout: parseInt(event.nativeEvent.layout.width),
-                    Height_Layout: parseInt(event.nativeEvent.layout.height),
-                    },
-                    () => this.DetectOrientation()
-                )
-            }>
-
-            {/* Header Component Start */}
-            <Header title = "Events" onPress = {() => this.props.navigation.goBack()}/>
-            {/* Header Component End */}
-            
-            {/* Body Component Start */}
-            <View style = {styles.body}>
-                <FlatList data = {this.events} extraData = {this.state} keyExtractor = {(item, index) => item.id} renderItem = {({item}) => 
-                    <View style = {{padding:10}}>
-                        <TouchableOpacity onPress = {() => this.props.navigation.navigate('EventDetail', item)} >
-                        <View style = {[styles.eventCardBoxes, colorStyles]}>
-                            <Image source = {item.icon}  style = {styles.eventIcons}/>
-                            <Text style = {{textAlign:'center', color: '#06525F', fontSize:13}}>{item.title}</Text>
+            <View style = {styles.container}>
+                {/* Header Component of the Page */}
+                <Header title = "Events" onPress = {() => this.props.navigation.goBack()}/>
+                
+                <ScrollView onLayout = {(event) => 
+                    this.setState(
+                        {
+                        Width_Layout: parseInt(event.nativeEvent.layout.width),
+                        Height_Layout: parseInt(event.nativeEvent.layout.height),
+                        },
+                        () => this.DetectOrientation()
+                    )
+                }>
+                {/* Body Component Start */}
+                <View style = {styles.body}>
+                    <FlatList data = {this.events} extraData = {this.state} keyExtractor = {(item, index) => item.id} renderItem = {({item}) => 
+                        <View style = {{padding:10}}>
+                            <TouchableOpacity onPress = {() => this.props.navigation.navigate('EventDetail', item)} >
+                            <View style = {[styles.eventCardBoxes, colorStyles]}>
+                                <Image source = {item.icon}  style = {styles.eventIcons}/>
+                                <Text style = {{textAlign:'center', color: '#06525F', fontSize:13}}>{item.title}</Text>
+                            </View>
+                            </TouchableOpacity>
+                            
                         </View>
-                        </TouchableOpacity>
-                        
-                    </View>
-                } style = {{flex:1}} numColumns = {3}/>
-            </View>
-            {/* Body Component End */}
-        </ScrollView>
+                    } style = {{flex:1}} numColumns = {3}/>
+                </View>
+                {/* Body Component End */}
+            </ScrollView>
+        </View>
         );
     }
 }
@@ -535,23 +532,11 @@ const styles = StyleSheet.create({
         backgroundColor:'#f2f2f2',
         flex:1,
     },
-    header: {
-        backgroundColor:'#06525F',
-        flexDirection: 'row',
-        height: 60,
-        flex:1,
-        alignItems: 'center',  
-        paddingLeft:15
-    },
     body: {
         backgroundColor:'#fff',
         flex:1,
         margin:15,
         borderRadius:3,
-        // shadowColor: 'black',
-        // shadowOffset: {width:0, height: 0},
-        // shadowOpacity:.16,
-        // elevation:3,
         flexDirection:'row',
     },
     eventCardBoxes: {
@@ -564,7 +549,6 @@ const styles = StyleSheet.create({
         justifyContent:'space-evenly',
 
     },
-    
     eventIcons: {
         height: 55,
         width: 55,

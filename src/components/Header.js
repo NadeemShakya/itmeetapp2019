@@ -3,24 +3,24 @@ import {
     Text,
     View,
     TouchableOpacity,
-    Image
+    Image,
+    StyleSheet
 } from 'react-native';
 
 const Header = (props) => {
-    const {headerView, headerText, backArrow} = styles;
     return (
-        <View style={headerView}>
+        <View style={styles.headerView}>
             <TouchableOpacity onPress={props.onPress}>
-                <Image source={require('../images/leftarrowWhite.png')} style={backArrow} />  
+                <Image source={require('../images/leftarrowWhite.png')} style={styles.backArrow} />  
             </TouchableOpacity>
-            <Text style={headerText}>
+            <Text style={styles.headerText}>
                 {props.title}
             </Text>
         </View>
     );
 };
 
-const styles = {
+const styles = StyleSheet.create({
     headerView: {
         backgroundColor: '#06525F',
         height: 60,
@@ -37,6 +37,6 @@ const styles = {
         marginLeft: 15,
         marginRight: 25
     }
-}
+});
 
 export default Header;

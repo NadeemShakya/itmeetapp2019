@@ -51,40 +51,43 @@ export default class Voting extends Component {
   }
   render() {
     return (
-      <ScrollView style={styles.container}>
+      <View  style={styles.container}>
+    
         {/* Header Component Start */}
-            <Header title = "Voting Section" onPress = {() => this.props.navigation.goBack()}/>
+        <Header title = "Voting Section" onPress = {() => this.props.navigation.goBack()}/>
         {/* Header Component End */}
-          <FlatList 
-            data = {this.state.programs}
-            keyExtractor = {(item, index) => item.id }
-            renderItem = {({item}) => 
-                <View style={styles.card}>
-                    <View style={styles.insideCard}>
-                        <View style={styles.leftCard}>
-                        <Image 
-                            style={{width: 100, height: 60, resizeMode: 'contain'}}
-                            source={item.imageURL}
-                        />
-                        <Text style={{fontSize: 16, color: '#06525F',textAlign: 'center',marginTop: 8, lineHeight: 20}}>{item.title}</Text>
+        <ScrollView>
+            <FlatList 
+                data = {this.state.programs}
+                keyExtractor = {(item, index) => item.id }
+                renderItem = {({item}) => 
+                    <View style={styles.card}>
+                        <View style={styles.insideCard}>
+                            <View style={styles.leftCard}>
+                            <Image 
+                                style={{width: 100, height: 60, resizeMode: 'contain'}}
+                                source={item.imageURL}
+                            />
+                            <Text style={{fontSize: 16, color: '#06525F',textAlign: 'center',marginTop: 8, lineHeight: 20}}>{item.title}</Text>
 
-                        </View>
-                        {/* <View style={styles.middleLine}></View> */}
-                        <View style={styles.rightCard}>
-                        <View>
-                            <Text>{item.description}</Text>
-                        </View>
-                        <TouchableOpacity onPress = {() => this.props.navigation.navigate('QRCodeScanner') }>
-                                <View style = {styles.voteNowButton}>
-                                    <Text style = {styles.texts}>Vote Now</Text>
-                                </View>
-                        </TouchableOpacity>
+                            </View>
+                            {/* <View style={styles.middleLine}></View> */}
+                            <View style={styles.rightCard}>
+                            <View>
+                                <Text>{item.description}</Text>
+                            </View>
+                            <TouchableOpacity onPress = {() => this.props.navigation.navigate('QRCodeScanner') }>
+                                    <View style = {styles.voteNowButton}>
+                                        <Text style = {styles.texts}>Vote Now</Text>
+                                    </View>
+                            </TouchableOpacity>
+                            </View>
                         </View>
                     </View>
-                </View>
-            }
-          />  
-      </ScrollView>
+                }
+            />  
+        </ScrollView>
+      </View>
     );
 }
 }
@@ -97,7 +100,7 @@ const styles = StyleSheet.create({
     card:{
         marginTop: 10,
         marginLeft: '5%',
-        marginBottom: 2,
+        marginBottom: 5,
         width: '90%',
         backgroundColor: '#fff',
         shadowColor: '#000',
