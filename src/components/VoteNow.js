@@ -1,20 +1,18 @@
 import React, {Component} from 'react';
-import {TouchableHighlight, StyleSheet, Text, View, TextInput,TouchableOpacity, Image} from 'react-native';
-
+import {
+    StyleSheet,
+    Text,
+    View,
+    TextInput,
+    TouchableOpacity,
+} from 'react-native';
+import Header from './Header';
 export default class VoteNow extends Component {
   render() {
     return (
         <View>
             {/* Header Component Start */}
-            <View style = {styles.header}>
-                <TouchableHighlight underlayColor = 'transparent' onPress = {() => this.props.navigation.goBack(this.props.navigation.state.key)} style = {styles.backIconImage} >
-                    <Image
-                        style={{width: 20, height: 20, marginRight:15}}
-                        source={require('../images/leftarrowWhite.png')}
-                    />
-                </TouchableHighlight>
-                <Text style = {{color: '#fff', fontSize: 20}}> Photography Competition</Text>
-            </View>
+                <Header title = "Photography Contest" onPress = {() => this.props.navigation.navigate('Voting')}/>
             {/* Header Component End */}            
             <View style = {{alignItems: 'center'}}>
                 <TextInput placeholder = "Search.." style = {{marginTop: 10, height: 45, width: '92%',fontSize: 20,padding: 10, backgroundColor: '#fff',borderWidth: 1, borderRadius: 5  }} />

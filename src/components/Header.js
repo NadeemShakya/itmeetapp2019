@@ -1,5 +1,10 @@
 import React from 'react';
-import {Text,View,TouchableOpacity,Image} from 'react-native';
+import {
+    Text,
+    View,
+    TouchableOpacity,
+    Image
+} from 'react-native';
 
 const Header = (props) => {
     const {headerView, headerText, backArrow} = styles;
@@ -21,17 +26,16 @@ const styles = {
         height: 60,
         flexDirection: 'row',
         alignItems: 'center',
-        // paddingBottom: 20
     },
     headerText: {
         color: '#FFFFFF',
-        fontSize: 25
+        fontSize: 20
     },
     backArrow: {
         width: 20,
         height: 20,
         marginLeft: 15,
-        marginRight: 15
+        marginRight: 25
     }
 }
 

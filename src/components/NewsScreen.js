@@ -60,7 +60,7 @@ class NewsScreen extends Component {
     render() {
         return(
             <ScrollView>
-                <Header title="News" onPress={()=>this.props.navigation.goBack()}/>
+                <Header title="News" onPress={() => this.props.navigation.goBack()}/>
                 <View style={styles.container}>
                     <View style={styles.textInputContainer}>
                         <TextInput style={styles.textInput} placeholder="Search..."/>

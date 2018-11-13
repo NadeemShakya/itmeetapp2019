@@ -12,6 +12,7 @@ import {
     StatusBar
 } from 'react-native';
 import {NavigationActions} from 'react-navigation';
+import Header from './Header';
  
 
 class EventsScreen extends Component {
@@ -506,15 +507,7 @@ class EventsScreen extends Component {
             }>
 
             {/* Header Component Start */}
-            <View style = {styles.header}>
-                <TouchableHighlight underlayColor = 'transparent' onPress = {() => this.props.navigation.goBack(this.props.navigation.state.key)} style = {styles.backIconImage} >
-                    <Image
-                        style={{width: 20, height: 20, marginRight:15}}
-                        source={require('../images/leftarrowWhite.png')}
-                    />
-                </TouchableHighlight>
-                <Text style = {{color: '#fff', fontSize: 25}}>Events</Text>
-            </View>
+            <Header title = "Events" onPress = {() => this.props.navigation.goBack()}/>
             {/* Header Component End */}
             
             {/* Body Component Start */}

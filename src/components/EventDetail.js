@@ -8,9 +8,7 @@ import {
     ScrollView,
     SectionList
 } from 'react-native';
-// BackArrow for header
-import BackArrow from '../images/leftarrowWhite.png';
-
+import Header from './Header';
 class EventDetail extends Component {
     render() {
         // Receiving props of an event.
@@ -28,15 +26,7 @@ class EventDetail extends Component {
         return(
          <View style = {styles.container}>
                 {/* Header Component Start */}
-                <View style = {styles.header}>
-                    <TouchableHighlight underlayColor = 'transparent' onPress = {() => this.props.navigation.navigate('Events')} style = {styles.backIconImage} >
-                            <Image
-                                style={{width: 20, height: 20, marginRight:15}}
-                                source={BackArrow}
-                            />
-                    </TouchableHighlight>
-                    <Text style = {{color: '#fff', fontSize: 20}}>{eventTitle}</Text>
-                </View>
+                    <Header title = {eventTitle} onPress = {() => this.props.navigation.navigate('Events')}/>
                 {/* Header Component End */} 
                 <ScrollView>
                     {/* Body Component Start */}

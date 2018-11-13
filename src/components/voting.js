@@ -9,7 +9,7 @@ import {
     ScrollView,
     FlatList
 } from 'react-native';
-
+import Header from './Header';
 
 export default class Voting extends Component {
   constructor() {
@@ -53,15 +53,7 @@ export default class Voting extends Component {
     return (
       <ScrollView style={styles.container}>
         {/* Header Component Start */}
-        <View style = {styles.header}>
-            <TouchableHighlight underlayColor = 'transparent' onPress = {() => this.props.navigation.goBack(this.props.navigation.state.key)} style = {styles.backIconImage} >
-                <Image
-                    style={{width: 20, height: 20, marginRight:15}}
-                    source={require('../images/leftarrowWhite.png')}
-                />
-            </TouchableHighlight>
-            <Text style = {{color: '#fff', fontSize: 22}}>Voting Section</Text>
-        </View>
+            <Header title = "Voting Section" onPress = {() => this.props.navigation.goBack()}/>
         {/* Header Component End */}
           <FlatList 
             data = {this.state.programs}
