@@ -14,17 +14,16 @@ class NewsScreen extends Component {
             status: false};
 
     head = (item) => {
+        // console.log(item);
         if(this.state.selected === item.id){
             return(
-                <TouchableOpacity style={styles.container} onPress={() => this.props.navigation.navigate('NewsDetail',item)}>
                     <View style={styles.enlargeCard}>
-                        <Text style={styles.enlargeTitleStyle}>{item.title}</Text>
-                        <View style={{flexDirection:'row'}}>
-                            <Text style={[styles.enlargeDateStyle,{paddingBottom:10}]}>| {item.date}</Text>
-                            <Text style={styles.readMore}>ReadMore </Text>
-                        </View>
+                    
+                            <Text style={styles.titleEnlarged}>{item.title}</Text>
+                            <Text style={styles.enlargeDateStyle}>| {item.date}</Text>
+                            <Text style = {styles.enlargedContent} numberOfLines = {12}>{item.content}</Text>
+                      
                     </View>
-                </TouchableOpacity>
             );
         }else{
             return (
@@ -36,6 +35,7 @@ class NewsScreen extends Component {
                     </View>
             );
         }
+
     }
 
     // body = (item) => {
@@ -48,14 +48,21 @@ class NewsScreen extends Component {
     //     return this.props.navigation.navigate('NewsDetail');
     // }
     toggle = (value) => {
-        return(
-            this.setState({selected: value})
-        );
+        if(this.state.selected === value) {
+            return(
+                this.setState({
+                    selected: 'none'
+                })
+            );
+        }else{
+            return(
+                this.setState({
+                    selected: value
+                })
+            )
+        }
     }
 
-    funcExecution = ()=>{
-        alert('Hello world')
-    }
 
     render() {
         return(
@@ -131,6 +138,13 @@ const styles = {
         paddingRight: 10,
         paddingTop: 10
     },
+    titleEnlarged: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        fontFamily: 'Segoe UI',
+        paddingLeft: 10,
+        color: '#fff'        
+    },
     dateStyle: {
         fontSize: 12,
         fontWeight: 'normal',
@@ -143,14 +157,16 @@ const styles = {
     enlargeCard: {
         marginTop: 15,
         marginBottom: 10,
-        height: 150,
+        marginLeft: '2%',
         backgroundColor: '#00838F',
         borderRadius: 2,
         shadowColor: '#000000',
         width: '96%',
         shadowOffset: {width:0, height:0},
         shadowOpacity:  .16,
-        elevation: 3
+        elevation: 3,
+        flexDirection: 'column',
+        padding: 10
     },
     enlargeTitleStyle: {
         flex:2,
@@ -166,12 +182,15 @@ const styles = {
         // flex:1,
         fontSize: 12,
         color: '#ffffff',
-        justifyContent: 'center',
         fontWeight: 'bold',
-        fontFamily: 'Segoe UI',
         paddingTop: 5,
         paddingLeft: 10,
-        paddingBottom: 20
+        paddingBottom: 10
+    },
+    enlargedContent: {
+        color: '#fff',
+        padding: 10,
+        lineHeight: 20
     },
     readMore: {
         paddingTop: 5,
