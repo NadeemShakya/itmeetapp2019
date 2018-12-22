@@ -1,296 +1,324 @@
 import React, {Component} from 'react';
 import {
+  Text, 
   View,
-  Text,
-  Image,
   ScrollView,
   StyleSheet,
-  Dimensions,
-  StatusBar,
-  Animated
+  Animated,
+  Image
 } from 'react-native';
 
-import Icon from 'react-native-vector-icons/FontAwesome';
+export default class Sponsor extends Component{
 
-// Images
-import logo from './images/logo.png';
-import background from './images/background.jpg';
+  // State
 
-// Landing component
-import App from './Landing'
+  state = {
+    names:[
+      {'Header': 'Gold Sponsor', id: 1, name:'Gold'},
+      {'Header': 'Silver Sponsor', id: 2, name:'Silver'},
+      {'Header': 'Bronze Sponsor', id: 3, name: 'Bronze'},
+      {'Header': 'Career Partner', id: 4, name: 'Career'},
+      {'Header': 'Entertainment Partner', id: 5, name: 'Entertainment'},
+      {'Header': 'Gaming Partner', id: 6, name: 'Gaming'},
+      {'Header' : 'Gift Partner', id: 7, name: 'Gift'},
+      {'Header': 'ISP Partner', id: 8, name: 'ISP'},
+      {'Header': 'Media Partner', id: 9, name: 'Media'},
+      {'Header': 'Pick and Drop Partner', id: 10, name: 'Pick'},
+      {'Header': 'Radio Partner', id: 11, name: 'Radio'}
+    ],
 
-// Screen Width and Height
-SCREEN_HEIGHT = Dimensions.get('window').height;
-SCREEN_WIDTH = Dimensions.get('window').width;
+    type:'None',
 
-// Logo Width and Height
-LOGO_MAX_WIDTH = 230;
-LOGO_MAX_HEIGHT = 230;
-LOGO_MIN_WIDTH = 100;
-LOGO_MIN_HEIGHT = 100;
+    Gold:[
+      {"Image": require('./images/Gold/Gold_1.jpg'), id: 1},
+      {"Image": require('./images/Gold/Gold_2.png'), id: 2}
+    ],
 
-export default class ITMeet extends Component {
-  constructor(props) {
-    super(props);
+    Silver:[
+      {"Image": require('./images/Silver/Silver_1.png'), id: 1},
+      {"Image": require('./images/Silver/Silver_2.svg'), id: 2}
+    ],
 
-    this.state = {
-      // for arrow y position
-      arrowPositionY: new Animated.Value(0),
+    Bronze:[
+      {"Image": require('./images/Bronze/Bronze_1.png'), id: 1},
+      {"Image": require('./images/Bronze/Bronze_2.png'), id: 2},
+      {"Image": require('./images/Bronze/Bronze_3.png'), id: 3},
+      {"Image": require('./images/Bronze/Bronze_4.jpg'), id: 4}
+    ],
 
-      // for scroll animation
-      scrollYPosition: new Animated.Value(0)
-    }
+    Career:[
+      {"Image": require('./images/Career/Career_1.png'), id: 1}
+    ],
 
-    this._scrollView = null;
+    Entertainment:[
+      {"Image": require('./images/Entertainment/Enter_2.png'), id: 1}
+    ],
+
+    Gaming:[
+      {"Image": require('./images/Gaming/Game_1.png'), id: 1},
+      {"Image": require('./images/Gaming/Game_2.jpg'), id: 2}
+    ],
+
+    Gift:[
+      {"Image": require('./images/Gift/Gift_1.png'), id: 1}
+    ],
+
+    ISP:[
+      {"Image": require('./images/ISP/ISP_1.png'), id: 1}
+    ],
+
+    Media:[
+      {"Image": require('./images/Media/Media_1.gif'), id: 1}
+    ],
+
+    Pick:[
+      {"Image": require('./images/Pick/Pick_1.png'), id: 1}
+    ],
+
+    Radio:[
+      {"Image": require('./images/Radio/Radio_1.jpg'), id: 1}
+    ]
   }
 
-  
+  render(){
+    return(
+        <ScrollView style={{flexGrow: 1, backgroundColor: "#EAECEE"}}>
+          <View style={styles.container}>
+          {
+            this.state.names.map((item, index) => (
+                <View key={item.id} style={styles.Sponsor}>
+                  <View style={styles.Sponsor_Header}>
+                    <Text style={styles.Header_Font}>{item.Header}</Text>
+                  </View>
 
-  arrowAnimation = () => {
-    Animated.sequence([
-      Animated.timing(
-        this.state.arrowPositionY, 
-        {
-          toValue : 1,
-          duration: 1000
-        }
-      ),
-
-      Animated.timing(
-        this.state.arrowPositionY, 
-        {
-          toValue : 0,
-          duration: 1000
-        }
-      )
-    ]).start(() => {
-      this.arrowAnimation();
-    });
-  }
-
-  componentDidMount = () => {
-   this.arrowAnimation();
-  }
-
-  render() {
-    // For Animated Arrow
-    const yPosition = this.state.arrowPositionY.interpolate({
-      inputRange : [0, 1],
-      outputRange : [SCREEN_HEIGHT - 50, SCREEN_HEIGHT - 70]
-    });
-
-    const arrowOpacity = this.state.arrowPositionY.interpolate({
-      inputRange : [0, 1],
-      outputRange : [1, 0]
-    });
-
-
-    //  for Animated Logo
-    const logoSize = this.state.scrollYPosition.interpolate({
-      inputRange : [0, SCREEN_HEIGHT - 300],
-      outputRange : [LOGO_MAX_HEIGHT, 100],
-      extrapolate : 'clamp'
-    });
-
-    const marginTop = this.state.scrollYPosition.interpolate({
-      inputRange : [0, SCREEN_HEIGHT - 300, SCREEN_HEIGHT, SCREEN_HEIGHT * 2],
-      outputRange : [(SCREEN_HEIGHT / 2) - (LOGO_MAX_HEIGHT), SCREEN_HEIGHT + 10, SCREEN_HEIGHT + 10, SCREEN_HEIGHT + 10],
-      extrapolate : 'clamp'
-    });
-
-    const marginLeft = this.state.scrollYPosition.interpolate({
-      inputRange : [0, SCREEN_HEIGHT - 300],
-      outputRange : [(SCREEN_WIDTH / 2) - (LOGO_MAX_WIDTH / 2), (SCREEN_WIDTH / 2) - (LOGO_MIN_HEIGHT / 2)],
-      extrapolate : 'clamp'
-    });
-
-    const logoOpacity = this.state.scrollYPosition.interpolate({
-      inputRange : [0, SCREEN_HEIGHT - 300, SCREEN_HEIGHT, SCREEN_HEIGHT * 2],
-      outputRange : [1, 0.1, 0, 0],
-      extrapolate : 'clamp'
-    });
-
-    // For Home Text
-    const textTitleOpacity = this.state.scrollYPosition.interpolate({
-      inputRange : [0, SCREEN_HEIGHT - 300],
-      outputRange : [1, 0],
-      extrapolate : 'clamp'
-    });
-
-    const textTitleTop = this.state.scrollYPosition.interpolate({
-      inputRange : [0, SCREEN_HEIGHT - SCREEN_HEIGHT / 2],
-      outputRange : [SCREEN_HEIGHT / 2, SCREEN_HEIGHT / 2 + 100],
-      extrapolate : 'clamp'
-    });
-
-    return (
-      <ScrollView 
-        ref= {component => this._scrollView = component}
-        scrollEventThrottle = {16}
-        pagingEnabled = {true}
-        showsVerticalScrollIndicator = {false}
-        onScroll = {
-          Animated.event([
-            {
-              nativeEvent : {
-                contentOffset : {
-                  y : this.state.scrollYPosition
-                }
-              }
-            }
-          ])
-        }
-        style = { 
-          { 
-            flex : 1
-          } 
-      }>
-        <StatusBar hidden ={ true } />
-        <View style = { [ styles.container , { width : SCREEN_WIDTH, height : SCREEN_HEIGHT * 2 } ] }>
-          <Image source = { background } style = { 
-            { 
-              height: SCREEN_HEIGHT,
-              width: SCREEN_WIDTH
-            } 
-          } />
-
-            <View style = { 
-              { 
-                width: LOGO_MAX_WIDTH,
-                height: LOGO_MAX_HEIGHT,
-                position: 'absolute'
-              } 
-            }>
-              <Animated.Image 
-                source = { logo }
-                style = {
+                  <View style={styles.Sponsor_Logo}>
                   {
-                    width : logoSize,
-                    height: logoSize,
-                    marginTop,
-                    marginLeft,
-                    zIndex: 2,
-                    opacity: logoOpacity
+                      this.state[item.name].map((items, index) => ( 
+                        <Image
+                            key={items.id}
+                            style={styles.Sponsor_Logo_Image}
+                            resizeMode = "contain"
+                            source={items.Image}/>
+                      ))
                   }
-                }
-              />
-            </View>
+                  </View>
 
-            <Animated.View style = {
-              {
-                position: 'absolute',
-                width: SCREEN_WIDTH,
-                top: textTitleTop,
-              }
-            }>
-                <Animated.Text style={
-                  { 
-                    textAlign: 'center',
-                    fontSize: 40,
-                    color: '#fff',
-                    fontWeight: 'bold',
-                    textShadowColor: 'rgba(0,0,0,0.6)',
-                    textShadowOffset: {
-                      width: 1,
-                      height: 1
-                    },
-                    textShadowRadius: 10,
+                </View>
+              ))
+          }
+          </View>
+        </ScrollView>
+      );
+  }
+}
 
-                    opacity: textTitleOpacity
-                  }
-                }>IT MEET v8.0</Animated.Text>
-
-                <Animated.Text style={
-                  { 
-                    textAlign: 'center',
-                    fontSize: 20,
-                    color: '#fff',
-                    textShadowColor: 'rgba(0,0,0,0.6)',
-                    textShadowOffset: {
-                      width: 1,
-                      height: 1
-                    },
-                    textShadowRadius: 10,
-
-                    opacity: textTitleOpacity
-                  }
-                }>Digitize  |  Innovate  |  Lead</Animated.Text>
-
-                <Animated.Text style={
-                  { 
-                    textAlign: 'center',
-                    fontSize: 26,
-                    paddingTop: 60,
-                    color: '#fff',
-                    textShadowColor: 'rgba(0,0,0,0.6)',
-                    textShadowOffset: {
-                      width: 1,
-                      height: 1
-                    },
-                    textShadowRadius: 10,
-
-                    opacity: textTitleOpacity
-                  }
-                }>Dec 27 - 28, 2018</Animated.Text>
-
-                <Animated.Text style={
-                  { 
-                    textAlign: 'center',
-                    fontSize: 14,
-                    color: '#fff',
-                    textShadowColor: 'rgba(0,0,0,0.6)',
-                    textShadowOffset: {
-                      width: 1,
-                      height: 1
-                    },
-                    textShadowRadius: 10,
-
-                    opacity: textTitleOpacity
-                  }
-                }>Kathmandu University, Dhulikhel</Animated.Text>
-
-            </Animated.View>
-
-            <Animated.View style = {
-              {
-                position: 'absolute',
-                width: SCREEN_WIDTH,
-                top: yPosition,
-                opacity: arrowOpacity
-              }
-            }>
-                <Icon 
-                  name="chevron-down" 
-                  style = {
-                    {
-                      textAlign: 'center',
-                      fontSize: 30,
-                      color: '#fff',
-                      textShadowColor: 'rgba(0,0,0,0.8)',
-                      textShadowOffset: {
-                        width: 1,
-                        height: 1
-                      },
-                      textShadowRadius: 10
-                    }
-                  }
-                  onPress = {() => {
-                    this._scrollView.scrollTo({y : SCREEN_HEIGHT, animated : true});
-                  }}
-                />
-            </Animated.View>
-            
-            <App />
-
+class AboutUs extends Component{
+  render(){
+    return(
+      <View style={styles.container}>
+        <View style={styles.About_Us_Logo}>
+          <Image style={{height: "100%", width: "100%"}}
+          resizeMode="contain"
+          source={require('./images/IT_Meet.png')}/>
         </View>
+        <View style={styles.About_Us_Details}>
+          <View style={styles.Detail_Box}>
+            <Text> 
+              IT Meet is a non-profit tech program organized by students of DoCSE(Department of Computer
+                Sciene and Engineering) of Kathmandu University.
+            </Text>
+            <Text> It is aimed to appreciate and uplift the growing IT market of Nepal.</Text>
+          </View>
+        </View>
+      </View>
+      );
+  }
+}
+
+class BusRoute extends Component{
+
+  state = {
+    details: [
+      {'date': '27th December, 2018', id: 1, name: 'Day1'},
+      {'date': '28th December, 2018', id: 2, name: 'Day2'},
+      {'date': '29th December, 2018', id: 3, name: 'Day2'}
+    ],
+
+    Day1:[
+      {'Route': 'Ratnapark - KU',
+        'Buses': 'Bus1',
+        'Time': '8:30 AM',
+        id: 1
+      },
+      {
+        'Route': 'KU - Ratnapark',
+        'Buses': 'Bus1',
+        'Time': '4:30 PM',
+        id:2
+      }
+    ],
+
+    Day2:[
+      {
+        'Route': 'Ratnapark - KU',
+        'Buses': 'Bus1, Bus3, Bus1 / Bus2',
+        'Time': '7:30 AM, 9:00 AM, 11:00 AM',
+        id: 1 
+      },
+      {
+        'Route': 'Koteshow - KU',
+        'Buses': 'Bus2',
+        'Time': '7:30 AM',
+        id: 2
+      },
+      {
+        'Route': 'KU - Ratnapark',
+        'Buses': 'Bus1, Bus2',
+        'Time': '4:30 PM, 5:30 PM',
+        id: 3
+      }
+    ]
+  }
+
+  render(){
+    return(
+      <ScrollView style={{flex: 1, width: "100%"}}>
+        <View style={styles.container}>
+          {
+            this.state.details.map((item, index) => (
+              <View key = {item.id} style = {styles.Route}>
+                <View style={styles.Route_Header}>
+                  <Text style={styles.Header_Font}>{item.date}</Text>
+                </View>
+                <View style={styles.Route_Details}>
+                {
+                  this.state[item.name].map((items, index) => (
+                    <View id={items.id} style={{marginLeft: 15}}>
+                      <Text key= {items.id} style={styles.Way_Header}>
+                        {items.Route}
+                      </Text>
+                      <Text key ={items.id}>
+                        <Text style={{fontWeight: 'bold', color: 'black'}}>Buses:-</Text> {items.Buses}
+                      </Text>
+                      <Text key={items.id}>
+                        <Text style={{fontWeight: 'bold', color: 'black'}}>Timing:-</Text> {items.Time}
+                      </Text>
+                    </View>
+                    ))
+                }
+                </View>
+              </View>
+           ))
+          } 
+      </View>
       </ScrollView>
-    );
+      );
   }
 }
 
 
 const styles = StyleSheet.create({
-  container : {
-    backgroundColor : '#c4e4ff'
+  container:{
+    flex: 1,
+    backgroundColor: "#EAECEE",
+    alignItems: "center"
+  },
+
+  // Sponsor StyleSheet
+
+  Sponsor:{
+    width: 320,
+    height: 200,
+    top: '3%',
+    marginTop: "5%",
+    backgroundColor: "white",
+    elevation: 1,
+  },
+  Sponsor_Header:{
+    height: 40,
+    width: "100%",
+    backgroundColor: "white",
+    elevation: 1,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  Sponsor_Logo:{
+    height: 150,
+    width: "100%", 
+    backgroundColor: 'white', 
+    flexDirection: 'row', 
+    justifyContent: "flex-start", 
+    alignItems: "flex-start", 
+    flexWrap: 'wrap'
+  },
+
+  Sponsor_Logo_Image:{
+    height: 60, 
+    width: 60,
+    marginLeft: 32, 
+    marginTop: 10,
+    borderWidth: 0.5,
+    borderColor: "#CCD1D1"
+  },
+
+  // About Us StyleSheet
+
+  Header_Font:{
+    fontSize: 20,
+    color: "#0E6655"
+  },
+
+  About_Us_Logo:{
+    height: "25%",
+    width: "40%",
+    top: "15%",
+    backgroundColor: "white",
+    zIndex: 1,
+    elevation: 3
+  },
+  About_Us_Details:{
+    height: "65%",
+    width: "90%",
+    top: "2%",
+    backgroundColor: "white",
+    elevation: 2,
+    alignItems: 'center',
+  },
+  Detail_Box:{
+    height: "70%",
+    width: "95%",
+    backgroundColor: 'white',
+    marginTop: '27%',
+    alignItems: 'center',
+    flexWrap: 'wrap'
+  },
+
+  // Route StyleSheet
+
+  Route:{
+    height: 330,
+    width: 320,
+    marginTop: "10%",
+    elevation: 1,
+    backgroundColor: "white"
+  },
+  Route_Header:{
+    height: "25%",
+    width: "100%",
+    elevation: 1,
+    backgroundColor: "white",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  Route_Details:{
+    height: "100%",
+    width: "100%",
+    backgroundColor: 'white',
+    top: '0%',
+  },
+  Way_Header:{
+    color: "#3498DB",
+    fontSize: 17,
+    marginTop: '5%'
   }
 });
