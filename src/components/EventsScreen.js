@@ -17,100 +17,116 @@ class EventsScreen extends Component {
     events = [
         {
             id:'1',
-            icon: require('../images/events/Github.png'),
-            title: 'Github Workshop ',
-            description: 'qui ipsum. Cillum pariatur qui Lorem eiusmod id duis quis nostrud laborum anim est ullamco. Lorem aliquip officia sunt nulla. Est et excepteur incididunt eu occaecat ad ex magna in sunt adipisicing. Dolor deserunt eu eu mollit minim adipisicing ad reprehenderit. Ea pariatur consectetur exercitation quis. Duis proident laborum laborum sint. Fugiat sint veniam commodo pariatur quis ipsum qui id mollit enim in veniam qui ipsum. Cillum pariatur qui Lorem eiusmod id duis quis nostrud laborum anim est ullamco. Lorem aliquip officia sunt nulla. Est et excepteur incididunt eu occaecat ad ex magna in sunt adipisicing',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            icon: require('../images/events/hackathon.png'),
+            title: 'Hackathon',
+            description: '\" Have an idea? Make your way through Hackathon to Minimum Viable Product (MVP) in 40 hours.\" \n\n Hackathon is an event where developers, programmers, and tech enthusiasts are aimed to develop something innovative and useful with the time constraint of 40 hours on the basis of the given theme. Participants will be given a workspace with the topnotch internet connection. There is no restriction in programming language and platform. \n\n Project has to be completed within the given time. In the end, a presentation has to be given by the participating team. The panel of judges will decide the winner based on creativity, innovation, completeness, and other critical factors',
+            fee : 'Rs 500 per person',
+            date: '27 28 29 December',
+            time: '10am 27th December 2018',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
-                    data: ['10,000']
+                    data: ['20,000']
                 },
                  {
                      title: '2nd Place',
-                     data: ['5000']
+                     data: ['10000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['2000']
+                     data: ['5000']
                  }
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
             
-    
         },
         {
             id:'2',
-            icon: require('../images/events/hackathon.png'),
-            title: 'Hackathon',
-            description: 'Hackathon is a codefest with a time restriction of 40 hours. The goal is to produce an autonomous software from scratch on an unrehearsed topic  through the course of the event. A team of at most 5 people is expected to create a functioning project by the end of the allocated time. A central topic is focused on for the event. There is no restriction on the type of software being created.',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            icon: require('../images/events/startup.png'),
+            title: 'Start-up Competition',
+            description: 'Startup Competition is a two day event which aims to provide encouragement and opportunities to those who are willing to share their innovative ideas related to infrastructural development in order to solve the socioeconomic hurdles faced in our society. Contestants are provided an idea pitching workshop to help them learn about the presentation skills, contents to be included in a startup pitch, how to manage the time and how to be persuasive on their startup idea \n\n The teams then will present their ideas in front of the panel of judges for the main event. The participants will be given a workspace with internet connection for the duration of the event. The participants will also be provided with the meal facility. \n\n The panel of judges will decide the winner based on the workability, creativity, innovation and other critical factors.',
+            fee : 'Rs 500 per team',
+            date: 'December 28th - 29th, 2018',
+            time: 'Participant will be notified via email',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
-                    data: ['10,000']
+                    data: ['20,000']
                 },
                  {
                      title: '2nd Place',
-                     data: ['5000']
+                     data: ['15000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['2000']
+                     data: ['10000']
                  }
             ],
-            
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSdPZUkLiHkr_MdcfhgjhE5CuOKSBcuFtQp8M0GOOdjDuwtHug/viewform',
         },
         {
             id:'3',
-            icon: require('../images/events/tedx.png'),
-            title: 'TedX',
-            description: 'TEDx is an international community that organizes TED-style events anywhere and everywhere, celebrating locally-driven ideas and elevating them to a global stage. TEDx events are produced independently of TED conferences, each event curates speakers on their own, but based on TED\'s format and rules.TEDx event is organized in order to discover ideas and spark conversations in various fields including computer technology and IT. Speakers from local communities are invited to speak to the mass of audience present in the IT meet. The theme for TedX Kathmandu University is “Citizenship lies in the service for the country”. We are organizing TedX for the first time.',
+            icon: require('../images/events/AI.png'),
+            title: 'AI Event',
+            description: 'Fusemachines AI Competition is a competitive event to be organized in ITMEET V8.0 at Kathmandu University, Dhulikhel, Kavre which provides a platform for the students as well as AI enthusiasts It is a competition for students and developers to come up with artificial intelligence (AI) solutions. The competition will be held among the best selected teams and The prize will be given in three categories.A team can choose to perform in all three categories and win the maximum of 25K from the competition. So this event targets to build up a platform for the AI enthusiast in Nepal.',
             fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            date: '28 & 29 December',
+            time: 'Participant will be notified via email',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            prizes: [
+                {   
+                    title: 'Dataset 1', 
+                    data: ['10,000']
+                },
+                 {
+                     title: 'Dataset 2',
+                     data: ['10,000']
+                 },
+                 {
+                     title: 'Insight/Visualization',
+                     data: ['5000']
+                 }
+            ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSdpvkFA9_bTkyTlTLtsfh9rOR_5DSZkWWLGY3JTP5aTqm_QiQ/viewform',
             
         },
         {
             id:'4',
-            icon: require('../images/events/startup.png'),
-            title: 'Start-up Competition',
-            description: 'This competition is an improvement on the previous renditions of the project demo where our central focus used to be concerned solely with engineering. We have decided to organize this competition to provide the engineering students with an insight into the management sector. The participants will be in incubation for a period of 3 months with the guidance of expert managerial personnel. ',
+            icon: require('../images/events/coding.png'),
+            title: 'Coding Challenge',
+            description: 'Coding challenge is an event at IT Meet which consists of the participants receiving a logic based mathematical problem that has to be solved and submitted under a certain time limit without the use of any internet facility. The programmer may use any programming language of their choice. Participants with correct submission will receive a prize. All required materials which include computers, compilers and code editors will be provided to the participants. There will be three levels for the participants to choose. They can register in either easy,intermediate or difficult level according to their choice. The prize will be given to the winners according to the level they compete in.',
             fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            date: '28 29 December',
+            time: 'Participant will be notified via email',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
-                    data: ['10,000']
+                    data: ['Exciting Gift Hampers']
                 },
                  {
                      title: '2nd Place',
-                     data: ['5000']
+                     data: ['Exciting Gift Hampers']
                  },
                  {
                      title: '3rd Place',
-                     data: ['2000']
+                     data: ['Exciting Gift Hampers']
                  }
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSexU2pDsIHg3AohI7uIJZ_buxkepaOC6azig_prSiZ8yT4ukQ/viewform',
             
         },
         {
             id:'5',
-            icon: require('../images/events/AI.png'),
-            title: 'AI Event',
-            description: 'qui ipsum. Cillum pariatur qui Lorem eiusmod id duis quis nostrud laborum anim est ullamco. Lorem aliquip officia sunt nulla. Est et excepteur incididunt eu occaecat ad ex magna in sunt adipisicing. Dolor deserunt eu eu mollit minim adipisicing ad reprehenderit. Ea pariatur consectetur exercitation quis. Duis proident laborum laborum sint. Fugiat sint veniam commodo pariatur quis ipsum qui id mollit enim in veniam qui ipsum. Cillum pariatur qui Lorem eiusmod id duis quis nostrud laborum anim est ullamco. Lorem aliquip officia sunt nulla. Est et excepteur incididunt eu occaecat ad ex magna in sunt adipisicing',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            icon: require('../images/events/codingTournament.png'),
+            title: 'Coding Tournament',
+            description: 'Coding Tournament is an event at IT Meet which consists of the participant teams of 2 members receiving some logic based mathematical problem that has to be solved and submitted under a certain time limit without the use of any internet facility.The Questions will be provided in different rounds and teams will be eliminated in each round.. The Programming team can discuss and help each other while tackling the problem. The team may use any programming language of their choice. Participant group reaching the final will receive a prize.',
+            fee : 'Rs 150',
+            date: '28th and 29th December 2018',
+            time: 'Participant will be notified via email',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -118,49 +134,37 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['5000']
+                     data: ['7000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['2000']
+                     data: ['3000']
                  }
             ],
-            
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLScGGJ8arc4AeEWLYMU7ZhCb207lAW49euiIWixC_23A4uOkQA/viewform?fbclid=IwAR2kpW9KLf0lwUB3ETtFWjfoGGyyXuEqwNQYiHANSBt2M1dqM7uSSvA696c',
         },
         {
             id:'6',
-            icon: require('../images/events/coding.png'),
-            title: 'Coding Competition',
-            description: 'In the Coding Competition competition, a logic-based programming problem will be given to the participants. They have to develop an algorithm to solve the problem with a programming language of their choice. The participant who solves the problem first will be awarded a prize. Coding Competition was held for a day in IT Meet 2018. The participants were given a timeframe of 45 minutes to solve the problem. Out of 40 participants, 9 of them were able to solve the question',
+            icon: require('../images/events/careerFair.png'),
+            title: 'Career Fair',
+            description: 'Career Fair is one of the exciting juncture of tech enthusiast generation and different IT companies, going to be held as a part of IT MEETv8.0 on 29th of December 2018 at Kathmandu University, Dhulikhel, Kavre. The event brings different Companies under the same roof and provides an opportunity to the working professionals meet other employers and exchange their aspirations for the right direction of heir career. The event provides an exciting opportunity to IT field people and students to meet different. IT Companies, know their working areas and present their CV and get a chance to get recruit as an intern or employer. The event help Companies get potential employers and job hunters get the right job. \n\n The event features components like onsite interviews and career counseling which acts a bridge between the Market ready graduates and Companies. The event aims to solve the problem of talent acquisition which is often faced by newly graduates. We believe to become a trendsetter in the IT Market for the final year students and newly graduates to guide them with their career choices. Thus, Companies can screen potential staffs which are best fit for their company based on their experience. Visit Career Fair this December 29, 2018 on IT MEETv8.0 at Kathmandu University, Dhulikhel, Kavre',
             fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            date: '29th December',
+            time: '10am - 3pm',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
             prizes: [
-                {   
-                    title: '1st Place', 
-                    data: ['10,000']
-                },
-                 {
-                     title: '2nd Place',
-                     data: ['5000']
-                 },
-                 {
-                     title: '3rd Place',
-                     data: ['2000']
-                 }
             ],
-            
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSc8k8CIIqj_04w5vZx1t6czLtMOYcLK6IEp2xp9gQLGNZONxA/viewform',
         },
         {
             id:'7',
-            icon: require('../images/events/codingTournament.png'),
-            title: 'Coding Tournament',
-            description: 'To solve algorithmic and mathematical challenges using programming language of the students’ choice , they are asked to solve tough logical problems in a tournament format Coding Tournament in IT Meet 2018 was held for one day with 12 teams containing 3 participants each. Each team was given 4 questions which they had to solve within 3 and half hour. The competition was hosted on vjudge.net online judge and was decided as per the rule of competitive programming which means winner is decided by  more number of correct submission in lesser time. The winning teams were awarded with Rs.  7000, Rs. 5000 and Rs. 3000 for first, second and third place respectively.',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            icon: require('../images/events/3D.png'),
+            title: '3D Animation',
+            description: '3D Animation competition is organized for the first time in the IT Meet v8.0 to provide a depth with new experience of 3D. In this event participants are assigned certain theme which they need to satisfy through there animation and creativity within the dedicated time. Each team consists of 4 participants and they have to bring their own laptop along with the necessary software or application.',
+            fee : 'Rs. 300 per team',
+            date: '28th 29th December',
+            time: '8am- 5pm (First Day) 9am-2pm(Second Day)',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -172,45 +176,67 @@ class EventsScreen extends Component {
                  },
                  {
                      title: '3rd Place',
-                     data: ['2000']
+                     data: ['3000']
                  }
             ],
-            
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSdaS5t85Wd4IY122gfMJOWZHx0aP5bqF9NE9wLyZ94JpEi16g/viewform',
         },
         {
             id:'8',
-            icon: require('../images/events/careerFair.png'),
-            title: 'Career Fair',
-            description: 'Career fair is a hub for interaction between potential employers and potential employees. This will provide students opportunity to meet employers and perform first interviews. Companies will not only get idea about the students interested in them but also students will be able to know about the various criterion for employment. In IT Meet 2018, more than 300 people including students, freelancers and job holders attended Career Fair.',
+            icon: require('../images/events/designCompetition.png'),
+            title: 'Design Competition',
+            description: 'Design competition is an event organized by IT Meet v8.0 where all the participants are allocated a certain theme decided by our sponsor on which they have to show their creativity and ingenuity and design or illustrate their creations within the given time frame. Participants are allowed to use any application of their choice for designing, animating or illustrating and are allowed to use the internet facility. Participants are required to bring their own laptop and necessary software and applications for designing.',
             fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            date: '28th 29th December',
+            time: 'Participant will be notified via email',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
-                    data: ['10,000']
+                    data: ['By sponser']
                 },
                  {
-                     title: '2nd Place',
-                     data: ['5000']
+                     title: 'First Runner Up',
+                     data: ['By Sponser']
                  },
-                 {
-                     title: '3rd Place',
-                     data: ['2000']
-                 }
             ],
+            link: 'https://docs.google.com/forms/d/1bP0SX7uiFqzzr4cPVWWJRpGeiP0sFao1TPoAoLH4YjI/viewform?fbclid=IwAR3pe_VLfOSG2KpUXXFIW69sIz8ORlTV_gsM_zWyBEARtN6HQLcv0ZLQCQ4&edit_requested=true'
             
         },
         {
             id:'9',
-            icon: require('../images/events/3D.png'),
-            title: '3D Design Competition',
-            description: 'No Info',
+            icon: require('../images/events/Github.png'),
+            title: 'Software Competition',
+            description: 'The software competition is an annual event of Kathmandu University that is held during the IT Meet. The competition provides an opportunity to showcase and promote the software projects of the students. The winner will be selected based on the audience reception and decided by the judges.',
             fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            date: 'To be notified via email',
+            time: 'Participant will be notified via email',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            prizes: [
+                {   
+                    title: '1st Prize', 
+                    data: ['10,000']
+                },
+                 {
+                     title: '2nd Prize',
+                     data: ['6,000']
+                 },
+                 {
+                     title: '3st Prize',
+                     data: ['3,000']
+                 }
+            ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfShVbJx0KWRr6GTc9-62Bx6hht3nhscBvdViREl8ovuRs17g/viewform',
+        },
+        {
+            id:'10',
+            icon: require('../images/events/penetratingTesting.jpg'),
+            title: 'Penetrating Testing',
+            description: 'Pentesting Competition is an event at IT Meet which provides a vehicle for up and coming cyber security student teams to build and hone the skills required to effectively discover, triage, and mitigate critical security vulnerabilities. This competition is unique in offering a simulated environment that mimics real world networks. The competition focuses on improving the security posture of a fictitious organization and reporting on risks in a manner that is similar to a real professional environment. It consists of the participant teams, maximum of 3 members receiving some problem based on cyber securities and vulnerabilities that has to be solved and submitted under a certain time limit. The team can discuss and help each other while tackling the problem. Participants must use their technical knowledge and skills to identify weaknesses in a simulated corporate environment without impacting the operations of simulated business activities.',
+            fee : 'Rs 500 per person ',
+            date: '28th & 29th December',
+            time: 'Dec 28 10:00 AM ~ Dec 29 04:00 PM (GMT+8, 48 hours)',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -218,76 +244,14 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['5000']
+                     data: ['6,000']
                  },
                  {
-                     title: '3rd Place',
-                     data: ['2000']
+                     title: '3st Place',
+                     data: ['3,000']
                  }
             ],
-            
-        },
-        {
-            id:'10',
-            icon: require('../images/events/designCompetition.png'),
-            title: 'Design Competition',
-            description: 'This competition is based on the competitor’s creativity with a particular theme. The participants with the best designs will be chosen and awarded with attractive gift hamper. Last IT Meet witnessed 18 participants in Designing Competition which was held for one day where they had to create a design on a theme given by sponsors within a given time frame (4 hours).',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
-            prizes: [
-                {   
-                    title: '1st Place', 
-                    data: ['10,000']
-                },
-                 {
-                     title: 'First Runner Up',
-                     data: ['6000']
-                 },
-            ],
-            
-        },
-        {
-            id:'11',
-            icon: require('../images/events/Github.png'),
-            title: 'Software/Hardware Competition',
-            description: 'In this event, the participants will showcase the software/hardware projects they have developed. Judges will evaluate the best entry and the winners will be rewarded accordingly. In IT Meet 2018, Software and Hardware Competitions were held for two days where teams described and presented their projects to the visitors and judges. 8 and 7 teams participated in Software and Hardware Competition respectively.',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
-            prizes: [
-                {   
-                    title: 'S/W Competition 1st Prize', 
-                    data: ['15,000']
-                },
-                 {
-                     title: 'S/W Competition 2nd Prize',
-                     data: ['7,500']
-                 },
-                 {
-                     title: 'H/W Competition 1st Prize',
-                     data: ['12,000']
-                 },
-                 {
-                    title: 'H/W Competition 2nd Prize',
-                    data: ['6,000']
-                }
-            ],
-            
-        },
-        {
-            id:'12',
-            icon: require('../images/events/penetratingTesting.jpg'),
-            title: 'Penetrating Testing',
-            description: 'Pen testing competition is a tournament based competition in which cyber security enthusiasts gather and are provided with a series of task to break into (hack into) a system. Winners will be provided with attractive gift hampers.',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
-            prizes: [
-            ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSf-PufkJp7DCw0zEueL1uh1kY1dGMzM4Zkr2CBpiqjdzXQewQ/viewform',
             
         },
         {
@@ -305,6 +269,8 @@ class EventsScreen extends Component {
                     data: ['The participant who answered the the most questions quickly won a gift hamper sponsored by Urban Girls.']
                 },
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
             
         },
         {
@@ -319,6 +285,8 @@ class EventsScreen extends Component {
             prizes: [
 
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
             
         },
         {
@@ -332,6 +300,8 @@ class EventsScreen extends Component {
             venue: 'Block 12 Room No: 102',
             prizes: [
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
             
         },
         {
@@ -358,6 +328,8 @@ class EventsScreen extends Component {
             venue: 'Block 12 Room No: 102',
             prizes: [
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
             
         },
         {
@@ -371,6 +343,8 @@ class EventsScreen extends Component {
             venue: 'Block 12 Room No: 102',
             prizes: [
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
             
         },
         {
@@ -400,6 +374,8 @@ class EventsScreen extends Component {
                     data: ['8,000']
                 }                 
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
             
         },
         {
@@ -413,6 +389,8 @@ class EventsScreen extends Component {
             venue: 'Block 12 Room No: 102',
             prizes: [
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
             
         },
         {
@@ -426,6 +404,8 @@ class EventsScreen extends Component {
             venue: 'Block 12 Room No: 102',
             prizes: [
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
             
         },
         {
@@ -440,6 +420,8 @@ class EventsScreen extends Component {
             prizes: [
 
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
             
         },
         {
@@ -454,6 +436,8 @@ class EventsScreen extends Component {
             prizes: [
 
             ],
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
         }                                                                                                                              
     ]
     constructor() {

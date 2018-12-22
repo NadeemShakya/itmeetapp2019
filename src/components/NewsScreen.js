@@ -6,21 +6,38 @@ import {AccordionList} from "accordion-collapse-react-native";
 import Header from './Header.js';
 import NewsJson from '../assets/news.json';
 
-
 class NewsScreen extends Component {
     
-    state={ news : NewsJson,
+    state={ news : NewsJson.data,
             selected : 'none',
             status: false};
 
+    componentDidMount = () => {
+        fetch('https://itmeet.ku.edu.np/api/v1/news')
+        .then((response) => response.json())
+        .then((responseJson) => {
+            console.log(responseJson.data);
+            this.setState({news: responseJson.data})
+            console.log(this.state.news)
+        })
+
+        .catch((error) => {
+            console.error(error)
+        })
+    }
+
+    // componentDidMount = () => {
+    //     this.setState({news: 'Hello World'})
+    // }
+
     head = (item) => {
         // console.log(item);
-        if(this.state.selected === item.id){
+        if(this.state.selected === item.id-1){
             return(
                     <View style={styles.enlargeCard}>
                     
                             <Text style={styles.titleEnlarged}>{item.title}</Text>
-                            <Text style={styles.enlargeDateStyle}>| {item.date}</Text>
+                            <Text style={styles.enlargeDateStyle}>| {item.created_at.toString()}</Text>
                             <Text style = {styles.enlargedContent} numberOfLines = {12}>{item.content}</Text>
                       
                     </View>
@@ -30,7 +47,7 @@ class NewsScreen extends Component {
                     <View style={styles.container}>
                         <View style={styles.card}>
                             <Text style={styles.titleStyle}>{item.title}</Text>
-                            <Text style={styles.dateStyle}>| {item.date}</Text>
+                            <Text style={styles.dateStyle}>| {item.created_at.toString()}</Text>
                         </View>
                     </View>
             );
@@ -87,6 +104,14 @@ class NewsScreen extends Component {
             </View>      
         );
     }
+
+    // render(){
+    //     return(
+    //         <View>
+    //             <Text>{this.state.news[0]}</Text>
+    //         </View>
+    //     )
+    // }
 }
 
 const styles = {
