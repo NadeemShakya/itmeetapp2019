@@ -43,28 +43,28 @@ class EventsScreen extends Component {
         },
         {
             id:'2',
-            icon: require('../images/events/startup.png'),
-            title: 'Start-up Competition',
-            description: 'Startup Competition is a two day event which aims to provide encouragement and opportunities to those who are willing to share their innovative ideas related to infrastructural development in order to solve the socioeconomic hurdles faced in our society. Contestants are provided an idea pitching workshop to help them learn about the presentation skills, contents to be included in a startup pitch, how to manage the time and how to be persuasive on their startup idea \n\n The teams then will present their ideas in front of the panel of judges for the main event. The participants will be given a workspace with internet connection for the duration of the event. The participants will also be provided with the meal facility. \n\n The panel of judges will decide the winner based on the workability, creativity, innovation and other critical factors.',
-            fee : 'Rs 500 per team',
+            icon: require('../images/events/yomaricodecamp2018.png'),
+            title: 'Yomari Code Camp',
+            description: 'Yomari Code Camp is a two-day event in the IT MEET which provides a platform for the students as well as tech enthusiasts to initiate an idea and deploy it into a useful application. The participants provide their ideas based on certain themes provided in the event. The participants, then need to develop an app using any platform within a short time frame based on their idea and skill-sets, present their final output, and justify their efforts to win. Yomari Code camp is not only just an ordinary event about participating and winning, but a platform where participants can test their problem-solving skills for problems faced in professional life and find their capacity to navigate through such potentially tricky situations. This platform also provides an excellent opportunity to be guided by expert mentors which will help the participants gain ideas and pursue their future endeavors. The participants can develop their applications on any of the mentioned themes.',
+            fee : 'Free',
             date: 'December 28th - 29th, 2018',
-            time: 'Participant will be notified via email',
+            time: '9:00',
             venue: 'Kathmandu University Central Campus, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
-                    data: ['20,000']
+                    data: ['12,000']
                 },
                  {
                      title: '2nd Place',
-                     data: ['15000']
+                     data: ['7,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['10000']
+                     data: ['5,000']
                  }
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSdPZUkLiHkr_MdcfhgjhE5CuOKSBcuFtQp8M0GOOdjDuwtHug/viewform',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLScREUC2Nfx99l_0tz4wQ7Adan0U-t_0_0HFcjTFsZLM0pBPGA/viewform',
         },
         {
             id:'3',
@@ -205,7 +205,7 @@ class EventsScreen extends Component {
         },
         {
             id:'9',
-            icon: require('../images/events/Github.png'),
+            icon: require('../images/events/soft.png'),
             title: 'Software Competition',
             description: 'The software competition is an annual event of Kathmandu University that is held during the IT Meet. The competition provides an opportunity to showcase and promote the software projects of the students. The winner will be selected based on the audience reception and decided by the judges.',
             fee : 'Free',
@@ -230,7 +230,7 @@ class EventsScreen extends Component {
         },
         {
             id:'10',
-            icon: require('../images/events/penetratingTesting.jpg'),
+            icon: require('../images/events/Pen-testing.png'),
             title: 'Penetrating Testing',
             description: 'Pentesting Competition is an event at IT Meet which provides a vehicle for up and coming cyber security student teams to build and hone the skills required to effectively discover, triage, and mitigate critical security vulnerabilities. This competition is unique in offering a simulated environment that mimics real world networks. The competition focuses on improving the security posture of a fictitious organization and reporting on risks in a manner that is similar to a real professional environment. It consists of the participant teams, maximum of 3 members receiving some problem based on cyber securities and vulnerabilities that has to be solved and submitted under a certain time limit. The team can discuss and help each other while tackling the problem. Participants must use their technical knowledge and skills to identify weaknesses in a simulated corporate environment without impacting the operations of simulated business activities.',
             fee : 'Rs 500 per person ',
@@ -270,7 +270,7 @@ class EventsScreen extends Component {
                 },
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
+            
             
         },
         {
@@ -286,22 +286,22 @@ class EventsScreen extends Component {
 
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
+           
             
         },
         {
             id:'15',
             icon: require('../images/events/Photography.png'),
             title: 'Photography Competition',
-            description: 'Participants submit their photos to be put on display in the venue. Visitors will vote on the best photo and a prize will be given to the photographer. In IT Meet 2018, the Photography contest was held for two days. In both days the photographs were exhibited. A total of 98 photographs were kept up for exhibition. Three of the photographs were selected as the winners. ',
-            fee : 'Free',
+            description: 'Photography contest is a platform where photographers (amateur, intermediate or professional) can show their photography skills and tell their stories via photographs. Photographers can participate by sending us their best photograph. Among the submitted photos, the winning photographs are selected on the basis of certain criteria (either judged by a professional photographer or by voting) and prizes are awarded to the winners',
+            fee : 'Rs.75 / Photo',
             date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            time: '09:00',
+            venue: 'KU Ring Road',
             prizes: [
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
+           
             
         },
         {
@@ -328,8 +328,8 @@ class EventsScreen extends Component {
             venue: 'Block 12 Room No: 102',
             prizes: [
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
+            
+            
             
         },
         {
@@ -342,102 +342,148 @@ class EventsScreen extends Component {
             time: '08:00',
             venue: 'Block 12 Room No: 102',
             prizes: [
+                {   
+                    title: '1st Place', 
+                    data: ['20,000']
+                },
+                 {
+                     title: '2nd Place',
+                     data: ['15000']
+                 },
+                 {
+                     title: '3rd Place',
+                     data: ['10000']
+                 }
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSf_Ite5iiH09gMnuIXjDgCH3tLCWgc464o3DcqASBRYgo_f2Q/viewform?usp=send_form',
+           
             
         },
         {
             id:'19',
-            icon: require('../images/events/gaming.png'),
-            title: 'Gaming',
-            description: 'FIFA,DOTA 2,Counter-Strike,Pubg Mobile,Mobile Games. For Cyber Gaming Competition, we aim to provide a platforms for the gamers to compete on several trending games. The winners will be awarded with attractive gift hamper.',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            icon: require('../images/events/startup.png'),
+            title: 'Start-up Competition',
+            description: 'Startup Competition is a two day event which aims to provide encouragement and opportunities to those who are willing to share their innovative ideas related to infrastructural development in order to solve the socioeconomic hurdles faced in our society. Contestants are provided an idea pitching workshop to help them learn about the presentation skills, contents to be included in a startup pitch, how to manage the time and how to be persuasive on their startup idea \n\n The teams then will present their ideas in front of the panel of judges for the main event. The participants will be given a workspace with internet connection for the duration of the event. The participants will also be provided with the meal facility. \n\n The panel of judges will decide the winner based on the workability, creativity, innovation and other critical factors.',
+            fee : 'Rs 500 per team',
+            date: 'December 28th - 29th, 2018',
+            time: 'Participant will be notified via email',
+            venue: 'Kathmandu University Central Campus, Dhulikhel',
             prizes: [
                 {   
-                    title: 'DOTA 1st Place', 
-                    data: ['25,000']
+                    title: '1st Place', 
+                    data: ['20,000']
                 },
                  {
-                     title: 'DOTA 2nd Place',
-                     data: ['15,000']
+                     title: '2nd Place',
+                     data: ['15000']
                  },
                  {
-                     title: 'FIFA 1st Place',
-                     data: ['15,000']
-                 },
-                 {
-                    title: 'FIFA 2nd Place',
-                    data: ['8,000']
-                }                 
+                     title: '3rd Place',
+                     data: ['10000']
+                 }
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
-            
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSdPZUkLiHkr_MdcfhgjhE5CuOKSBcuFtQp8M0GOOdjDuwtHug/viewform',
         },
         {
             id:'20',
-            icon: require('../images/events/ltsp_logo.png'),
-            title: 'LTSP e-Library Demonstration',
-            description: 'Linux Terminal Server Project (LTSP) e-Library is a project initiated by Help Nepal Network and technically supported by Department of Computer Science and Engineering (DoCSE), Kathmandu University.  IT Meet v8.0 will show how our e-Library project is being operated and how it is helping student learn better. In IT Meet 2018, LTSP e-library was demonstrated for two days. In both days brief concept about LTSP e-library and how a mere thin client can be used as an unit computer to help in the educational context of Nepal was demonstrated. Audiences were also free to explore the e-library contents.',
-            fee : 'Free',
+            icon: require('../images/events/fifa.png'),
+            title: 'Fifa 19',
+            description: 'The FIFA gaming sanga continues at the IT MEET 2018 v8.0 as the mega event perpares for FIFA 19 gaming compeitition event as the part of the mega gaming event. Experience the gaming fever and show your FIFA skillset to prove yourself as the best. FIFA 19 which was released earlier this year, stands out from its predecessor and the time has come for YOU to stand out from your opponents. Register immediately to kick-off.',
+            fee : 'Rs.250',
             date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            time: '09:00',
+            venue: 'Block 9',
             prizes: [
+                {   
+                    title: 'Fifa 1st Place', 
+                    data: ['15,000']
+                },
+                 {
+                     title: 'Fifa 2nd Place',
+                     data: ['10,000']
+                 }
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSf5r3-_SNi1CafUlWZ6eoBNNy_WUB0vYIeQM1uz0cSTIwj_rA/viewform',
+            
             
         },
         {
             id:'21',
-            icon: require('../images/events/bloodDonation.png'),
-            title: 'Blood Donation',
-            description: 'KU Youth Red Cross (KUYRC) is collaborating with IT MEET v8.0 organizing committee to conduct blood donation program for the visitors of IT MEET v8.0.',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            icon: require('../images/events/Dota.png'),
+            title: 'Dota 2',
+            description: 'DOTA 2 is one of the most popular and loved moba (multiplayer online battle arena) games in the world. In the context of Nepal, IT meet has always been one of the biggest platforms which offers lucrative prize pool for the competitive dota 2 teams of Nepal. It also aspires emerging dota 2 enthusiasts towards competitive dota 2. The competing teams will compete in best of one series for the preliminary stages in the upper and lower bracket format. The semi finals and finals will be played in best of three and best of five format respectively. The event will last for 3 days which can last 9 hours per day and final will be played on the third day. Register to participate !!!!',
+            fee : 'Rs.2000 / Team',
+            date: '27th December - 29th December',
+            time: '09:00',
+            venue: 'Block 9',
             prizes: [
+                {   
+                    title: 'Dota 1st Place', 
+                    data: ['25,000']
+                },
+                 {
+                     title: 'Dota 2nd Place',
+                     data: ['15,000']
+                 }
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLScXbmM1mmBsJFOZW40YAwVP8b3yfKpbjmr4e7AI4bDtPZh3Mw/viewform',
+            
             
         },
         {
             id:'22',
-            icon: require('../images/events/robotic.png'),
+            icon: require('../images/events/Pubg.png'),
             title: 'Robotics Event',
-            description: 'This event is done in collaboration with Kathmandu University Robotics Club. We encourage community enthusiasts to participate in demonstration of various robotics project within and outside KU.',
-            fee : 'Free',
+            description: 'PlayerUnknowns Battlegrounds (PUBG) Mobile is an online multiplayer battle royale game on mobile devices. PUBG mobile is a player versus player action game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive. In the context of Nepal, IT meet has always been one of the biggest platforms for gaming and PUBG mobile is an up and coming game which has gained massive popularity with the Nepali Youth. It is going to be held as a part of IT MEET v8.0 for the first time.',
+            fee : 'Squad: Rs.500, Solo: Rs.150',
             date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            time: '09:00',
+            venue: 'Block 9',
             prizes: [
+                {   
+                    title: 'Pubg Squad 1st Place', 
+                    data: ['12,000']
+                },
+                 {
+                     title: 'Pubg Squad 2nd Place',
+                     data: ['8,000']
+                 },
+                 {   
+                    title: 'Pubg Solo 1st Place', 
+                    data: ['6,000']
+                },
+                 {
+                     title: 'Pubg Solo 2nd Place',
+                     data: ['3,000']
+                 }
 
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfkHEy8aB2DLUTnAoe9DK0urEi3cYF78T44DIECA2vu1BlaNw/viewform',
+            
             
         },
         {
             id:'23',
-            icon: require('../images/events/acousticNight.png'),
-            title: 'Acoustic Night',
+            icon: require('../images/events/csgo.png'),
+            title: 'Counter Strike - GO',
             description: 'Acoustic Night is  a culture of IT MEET than an event where students will perform various songs and musicals. This event will serve to entertain the students and the guests of IT Meet.More than 500 students attended the Acoustic Night last year.',
-            fee : 'Free',
-            date: '28th December',
-            time: '08:00',
-            venue: '-',
+            fee : 'Rs.1000/Team',
+            date: '27th December - 29th December',
+            time: '09:00',
+            venue: 'Block 9',
             prizes: [
+                {   
+                    title: 'CS-GO 1st Place', 
+                    data: ['15,000']
+                },
+                 {
+                     title: 'CS-GO 2nd Place',
+                     data: ['10,000']
+                 }
 
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
-            emContact: 'Rupesh Poudel : 9849102465 / rupesh.poudel07@gmail.com \n Dinank Bista : 9840011611 /  bista.dinank@gmail.com \n Ashish Subedi : 9843520805 / subediashish35@gmail.com Khagendra Adhikari : 9849943379 / aadhikarikhagen30@gmail.com'
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLScU7XYXhgmpA970QI3uOVNYEXHzIHiyjjTtyuA2JQw-0AD9NQ/viewform?vc=0&c=0&w=1',
+            
         }                                                                                                                              
     ]
     constructor() {
