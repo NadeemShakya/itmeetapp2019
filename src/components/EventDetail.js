@@ -6,7 +6,8 @@ import {
     TouchableHighlight,
     Image,
     ScrollView,
-    SectionList
+    SectionList,
+    Linking
 } from 'react-native';
 import Header from './Header';
 class EventDetail extends Component {
@@ -22,6 +23,7 @@ class EventDetail extends Component {
         const venue = navigation.getParam('venue');
         const prizes = navigation.getParam('prizes', '-');
         const contactInfo = navigation.getParam('contact');
+        const eventLink = navigation.getParam('link');
 
         return(
          <View style = {styles.container}>
@@ -55,14 +57,13 @@ class EventDetail extends Component {
                                     <Text>{date}</Text>
                                     </Text>
                                 </View>
-                                <View  style = {{flex:1}}>
+                            </View>
+                            <View  style = {{marginTop: 10}}>
                                     <Text>
                                         <Text style = {{fontWeight: 'bold'}}>Time: </Text>
                                         <Text>{time}</Text>
                                     </Text>
                                 </View>
- 
-                            </View>
                             {/* Venue Section */}
                             <View style = {{marginTop: 10}}>
                                 <Text>
@@ -87,7 +88,7 @@ class EventDetail extends Component {
 
                         {/* Register Button Section          */}
                         <View style = {{marginTop: 50}}>
-                            <TouchableHighlight style = {styles.registerButton} >
+                            <TouchableHighlight style = {styles.registerButton} onPress={() => Linking.openURL(eventLink)} >
                                 <Text style = {{color: '#fff', fontSize:20}}>REGISTER</Text>
                             </TouchableHighlight>
                         </View>  
