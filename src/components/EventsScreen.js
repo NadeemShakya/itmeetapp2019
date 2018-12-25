@@ -269,7 +269,7 @@ class EventsScreen extends Component {
                     data: ['The participant who answered the the most questions quickly won a gift hamper sponsored by Urban Girls.']
                 },
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSeoREd6y9X_k6uvIq9Am6vfA0OEFkIN-bc7UnL7wAZfRaPYgg/viewform',
             
             
         },
@@ -278,14 +278,26 @@ class EventsScreen extends Component {
             icon: require('../images/events/IT_quiz.png'),
             title: 'IT Quiz',
             description: 'An inter school quiz competition will be organized in IT Meet v8.0. The two teams will be awarded impressive gift hampers and a running shield. This event is to encourage and motivate students from early age towards ICT.',
-            fee : 'Free',
+            fee : '300 / Team',
             date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            time: '09:00',
+            venue: 'Block 9',
             prizes: [
+                {   
+                    title: '1st Place', 
+                    data: ['12,000']
+                },
+                 {
+                     title: '2nd Place',
+                     data: ['7,000']
+                 },
+                 {
+                     title: '3st Place',
+                     data: ['5,000']
+                 }
 
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            link: 'https://docs.google.com/forms/d/e/1FAIpQLSd5mrqU14LCTbCq1v3xQ2ZEEtvhr3wr_9C-7_ZtfJB4-R14Gg/viewform',
            
             
         },
@@ -299,8 +311,20 @@ class EventsScreen extends Component {
             time: '09:00',
             venue: 'KU Ring Road',
             prizes: [
+                {   
+                    title: '1st Place', 
+                    data: ['Photo Book and Rs.2,000']
+                },
+                 {
+                     title: '2nd Place',
+                     data: ['5,000']
+                 },
+                 {
+                     title: '3st Place',
+                     data: ['3,000']
+                 }
             ],
-            link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
+            link: 'https://itmeet.ku.edu.np/events/photography-competition',
            
             
         },
@@ -312,9 +336,10 @@ class EventsScreen extends Component {
             fee : 'Free',
             date: '28th December',
             time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            venue: 'Fountain',
             prizes: [
             ],
+            link: 'https://itmeet.ku.edu.np/',
             
         },
         {
@@ -328,7 +353,7 @@ class EventsScreen extends Component {
             venue: 'Block 12 Room No: 102',
             prizes: [
             ],
-            
+            link: 'https://itmeet.ku.edu.np/',
             
             
         },
@@ -433,7 +458,7 @@ class EventsScreen extends Component {
         {
             id:'22',
             icon: require('../images/events/Pubg.png'),
-            title: 'Robotics Event',
+            title: 'Pubg Competition',
             description: 'PlayerUnknowns Battlegrounds (PUBG) Mobile is an online multiplayer battle royale game on mobile devices. PUBG mobile is a player versus player action game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive. In the context of Nepal, IT meet has always been one of the biggest platforms for gaming and PUBG mobile is an up and coming game which has gained massive popularity with the Nepali Youth. It is going to be held as a part of IT MEET v8.0 for the first time.',
             fee : 'Squad: Rs.500, Solo: Rs.150',
             date: '28th December',
@@ -466,7 +491,7 @@ class EventsScreen extends Component {
             id:'23',
             icon: require('../images/events/csgo.png'),
             title: 'Counter Strike - GO',
-            description: 'Acoustic Night is  a culture of IT MEET than an event where students will perform various songs and musicals. This event will serve to entertain the students and the guests of IT Meet.More than 500 students attended the Acoustic Night last year.',
+            description: 'Counter-Strike: Global Offensive (CS: GO) is a multiplayer first-person shooter video game. In the context of Nepal, IT meet has always been one of the biggest platforms which offers lucrative prize pool for the competitive CS: GO teams of Nepal. The event attracts players from various colleges from Kathmandu and gaming teams from NESA. The semifinals and finals will be played in best of three and best of five formats respectively. The event will last for 3 days which can last 9 hours per day and final will be played on the third day. The venue for this event will be Block 9 of Computer Science and Engineering Department of Kathmandu University, Dhulikhel. ',
             fee : 'Rs.1000/Team',
             date: '27th December - 29th December',
             time: '09:00',

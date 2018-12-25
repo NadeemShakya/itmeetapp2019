@@ -101,7 +101,7 @@ class HomeScreen extends Component {
             id:'1',
             icon: require('../images/developers.png'),
             title: 'Developers',
-            link: 'Developers'
+            link: 'Developer'
         },
     ]
     render() {

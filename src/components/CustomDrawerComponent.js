@@ -90,7 +90,7 @@ class CustomDrawerComponent extends Component {
               <Text  style = {styles.cardTopic} >About Us</Text>
             </View>
           </TouchableHighlight>  
-          <TouchableHighlight onPress = {() => this.props.navigation.navigate('Developers')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('Developer')}>
             <View style = {styles.card} >
               <Image source = {require('../images/developers.png')} style = {styles.cardImage}/>
               <Text  style = {styles.cardTopic} >Developers</Text>

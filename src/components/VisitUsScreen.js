@@ -1,22 +1,23 @@
-import React, {Component} from 'react';
-import {View, Text, TouchableHighlight} from 'react-native';
+import React, { Component } from 'react';
+import { WebView } from 'react-native';
 
-class VisitUsScreen extends Component {
-    constructor(props) {
-        super(props);
-        
-    }
-    render() {
-        const eventTitle = this.props.getParam('name');        
-        return(
-            <View>
-                <Text>{eventTitle}</Text>
-                <TouchableHighlight onPress={() => this.props.navigation.navigate('Register')} >
-                                <Text style = {{color: '#000', fontSize:20}}>REGISTER</Text>
-                </TouchableHighlight>
-            </View>
-        );
-    }
+export default class VisitUs extends Component {
+    static navigationOptions = {
+    headerStyle: {
+        backgroundColor: '#06525F',
+        height: 70,
+      },
+      headerTintColor: '#fff',
+      headerTitle: 'React Native',
+      headerTitleStyle: {
+          fontSize: 22,
+      }
 }
-
-export default VisitUsScreen;
+  render() {
+    return (
+      <WebView
+        source={{uri: 'https://itmeet.ku.edu.np/'}}
+      />
+    );
+  }
+}
