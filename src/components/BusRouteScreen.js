@@ -23,42 +23,42 @@ export default class BusRouteScreen extends Component{
               },
               {
                 id: '3',
-                date: '28th & 29th  December',
+                date: '28th & 28th  December',
                 time: '7:30 am',
                 from: `Ratnapark`,
                 to: `Dhulikhel`,
               },
               {
                 id: '4',
-                date: '28th & 29th  December',
+                date: '28th & 28th  December',
                 time: '7:30 am',
                 from: `Koteshowr`,
                 to: `Dhulikhel`,
               },
               {
                 id: '5',
-                date: '28th & 29th  December',
+                date: '27th & 28th  December',
                 time: '9:00 am',
                 from: `Ratnapark`,
                 to: `Dhulikhel`,
               },
               {
                 id: '5',
-                date: '28th & 29th  December',
+                date: '27th & 28th  December',
                 time: '11:00 am',
                 from: `Ratnapark`,
                 to: `Dhulikhel`,
               },
               {
                 id: '5',
-                date: '28th & 29th  December',
+                date: '27th & 28th  December',
                 time: '4:30 pm',
                 from: `Dhulikhel`,
                 to: `Ratnapark`,
               }, 
               {
                 id: '5',
-                date: '28th & 29th December',
+                date: '27th & 28th December',
                 time: '5:30 pm',
                 from: `Dhulikhel`,
                 to: `Ratnapark`,
@@ -93,7 +93,7 @@ export default class BusRouteScreen extends Component{
                   <Text style = {{textAlign:'center',fontSize:14}}><Text style = {{fontWeight:'bold'}}>From: </Text>{item.from}</Text> 
                   <Text style = {{textAlign:'center',fontSize:14}}><Text style = {{fontWeight:'bold'}}>To: </Text>{item.to}</Text>             
                 </View>  
-              </View>      
+              </View>       
             }
           /> 
         </ScrollView>       

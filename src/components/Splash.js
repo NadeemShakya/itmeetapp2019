@@ -8,6 +8,7 @@ import {
   Dimensions,
   StatusBar,
   TouchableHighlight,
+  TouchableOpacity,
   Alert,
   Animated
 } from 'react-native';
@@ -39,8 +40,7 @@ class Splash extends Component{
   render(){
     return(
       <View>
-        <StatusBar hidden = {true} />
-
+        <StatusBar backgroundColor = '#043F49' barStyle = 'light-content'/>
         <View style = { [ styles.container , { width : SCREEN_WIDTH, height : SCREEN_HEIGHT } ] }>
           <Image source = { background } style = { 
             { 
@@ -153,23 +153,11 @@ class Splash extends Component{
                 opacity: 1
               }
             }>
-                <Icon 
-                  name="chevron-down" 
-                  style = {
-                    {
-                      textAlign: 'center',
-                      fontSize: 30,
-                      color: '#fff',
-                      textShadowColor: 'rgba(0,0,0,0.8)',
-                      textShadowOffset: {
-                        width: 1,
-                        height: 1
-                      },
-                      textShadowRadius: 10
-                    }
-                  }
-                  onPress = {() => this.props.navigation.navigate('Landing')}
-                />
+            <TouchableOpacity style = {{ justifyContent:'center', alignItems:'center', marginTop:-180}} onPress = {() => this.props.navigation.navigate('Landing')}>
+              <View style = {styles.startButton}>
+                <Text style = {styles.startText}>Get Started</Text>
+              </View>
+            </TouchableOpacity>
             </View>
         </View>
       </View>
@@ -182,6 +170,18 @@ class Splash extends Component{
 const styles = StyleSheet.create({
   container : {
     backgroundColor : '#c4e4ff'
+  },
+  startButton: {
+    backgroundColor: '#fff',
+    width: '50%',
+    height:50,
+    alignItems:'center',
+    justifyContent:'center',
+    borderRadius:20
+  },
+  startText: {
+    fontSize:18,
+    color: '#06525F'
   }
 });
 
