@@ -126,7 +126,7 @@ class Splash extends Component{
 
                     opacity: 1
                   }
-                }>Dec 27 - 28, 2018</Text>
+                }>Dec 28 - 29, 2018</Text>
                 <Text style={
                   { 
                     textAlign: 'center',
@@ -168,7 +168,6 @@ class Splash extends Component{
                       textShadowRadius: 10
                     }
                   }
-
                   onPress = {() => this.props.navigation.navigate('Landing')}
                 />
             </View>

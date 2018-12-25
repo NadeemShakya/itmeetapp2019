@@ -9,25 +9,31 @@ class SponsersScreen extends Component {
               {'Header': 'Silver Sponsor', id: 2, name:'Silver'},
               {'Header': 'Bronze Sponsor', id: 3, name: 'Bronze'},
               {'Header': 'Career Partner', id: 4, name: 'Career'},
-              {'Header': 'Entertainment Partner', id: 5, name: 'Entertainment'},
+              {'Header': 'VR Partner', id: 5, name: 'Entertainment'},
               {'Header': 'Gaming Partner', id: 6, name: 'Gaming'},
               {'Header' : 'Gift Partner', id: 7, name: 'Gift'},
               {'Header': 'ISP Partner', id: 8, name: 'ISP'},
               {'Header': 'Media Partner', id: 9, name: 'Media'},
               {'Header': 'Pick and Drop Partner', id: 10, name: 'Pick'},
-              {'Header': 'Radio Partner', id: 11, name: 'Radio'}
+              {'Header': 'Radio Partner', id: 11, name: 'Radio'},
+              {'Header' : 'SMS Partner', id: 12, name: 'SMS'},
             ],
         
             type:'None',
         
             Gold:[
               {"Image": require('../../images/Gold/Gold_1.jpg'), id: 1},
-              {"Image": require('../../images/Gold/Gold_2.png'), id: 2}
+              {"Image": require('../../images/Gold/Gold_2.png'), id: 2},
+              {"Image": require('../../images/Gold/Gold_3.png'), id: 3},
+              {"Image": require('../../images/Gold/Gold_4.png'), id: 4}
+
+
             ],
         
             Silver:[
               {"Image": require('../../images/Silver/Silver_1.png'), id: 1},
-              {"Image": require('../../images/Silver/Silver_2.svg'), id: 2}
+              {"Image": require('../../images/Silver/Silver_2.png'), id: 2},
+
             ],
         
             Bronze:[
@@ -68,14 +74,21 @@ class SponsersScreen extends Component {
         
             Radio:[
               {"Image": require('../../images/Radio/Radio_1.jpg'), id: 1}
+            ],
+
+            SMS:[
+              {"Image": require('../../images/SMS/SMS_1.png'), id: 1},
+              {"Image": require('../../images/SMS/SMS_2.png'), id: 2}
+
+
             ]
           }        
     
     render() {
         return(
-        <View>
-            <Header title = "Sponsors" onPress = {() => this.props.navigation.goBack()} />
-        <ScrollView style={{flexGrow: 1, backgroundColor: "#EAECEE"}}>
+        <View style = {{backgroundColor:'#fff'}}>
+        <Header title = "Sponsors" onPress = {() => this.props.navigation.goBack()} />
+        <ScrollView style={{flexGrow: 1, backgroundColor: "#fff"}}>
           <View style={styles.container}>
           {
             this.state.names.map((item, index) => (
@@ -108,52 +121,52 @@ class SponsersScreen extends Component {
 const styles = StyleSheet.create({
     container:{
       flex: 1,
-      backgroundColor: "#EAECEE",
-      alignItems: "center"
+      alignItems: "center",
+      padding:20,
+      marginBottom:30
+      
     },
   
     // Sponsor StyleSheet
   
     Sponsor:{
-      width: 320,
-      height: 200,
-      top: '3%',
-      marginTop: "5%",
-      backgroundColor: "white",
-      elevation: 1,
+      width: '100%',
+      // height:300,
+      backgroundColor: "#fff",
+      // elevation: 1,
+      alignItems:'center',
     },
     Sponsor_Header:{
-      height: 40,
+      height: 30,
       width: "100%",
-      backgroundColor: "white",
+      backgroundColor: "#06525F",
       elevation: 1,
       alignItems: "center",
-      justifyContent: "center"
+      justifyContent: "center",
+      padding:20,
+      borderRadius:3
     },
     Sponsor_Logo:{
-      height: 150,
       width: "100%", 
-      backgroundColor: 'white', 
+      height:100,
+      // backgroundColor: 'yellow', 
       flexDirection: 'row', 
-      justifyContent: "flex-start", 
-      alignItems: "flex-start", 
-      flexWrap: 'wrap'
+      justifyContent: "center", 
+      alignItems: "center", 
+      // flexWrap: 'wrap'
     },
   
     Sponsor_Logo_Image:{
-      height: 60, 
-      width: 60,
-      marginLeft: 32, 
-      marginTop: 10,
-      borderWidth: 0.5,
-      borderColor: "#CCD1D1"
+      height: 90, 
+      width: 90,
+      margin:5,
     },
   
     // About Us StyleSheet
   
     Header_Font:{
-      fontSize: 20,
-      color: "#0E6655"
+      fontSize: 18,
+      color: "#fff"
     },
   
     About_Us_Logo:{

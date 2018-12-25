@@ -109,7 +109,7 @@ class HomeScreen extends Component {
             width: (parseInt(this.state.Width_Layout) - 90) / 3
         }
         return(
-            <View>
+            <View style = {{backgroundColor:'#fff', flex:1}}>
                 {/* Header Division Start */}
                 <View style = {styles.header}>
                     <View style = {styles.menuIcon}>
