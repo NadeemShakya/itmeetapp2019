@@ -564,7 +564,6 @@ const styles = StyleSheet.create({
     },
     body: {
         backgroundColor:'#fff',
-        flex:1,
         margin:15,
         borderRadius:3,
         flexDirection:'row',

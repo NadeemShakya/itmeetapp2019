@@ -23,7 +23,7 @@ class CustomDrawerComponent extends Component {
         <View style = {{heght: 200, justifyContent:'center', alignItems:'center'}}>
           <Image source = {navigationBackground} style = {{width:'100%', height:'100%', maxWidth: 'auto', maxHeight:'auto', position:'absolute'}}/>
           <Image source = {logo} style = {{width: 120, height:120, marginTop:15}}/>
-          <Text style = {{color: '#fff', fontSize:13, margin:10}}>Digitalize. Innovate. Lead</Text>
+          <Text style = {{color: '#fff', fontSize:13, margin:10}}>Digitize. Innovate. Lead</Text>
         </View> 
         {/* Register Card Section Start */}
         <View style = {styles.topCard}>
@@ -35,7 +35,6 @@ class CustomDrawerComponent extends Component {
           </TouchableHighlight>
         </View>      
         {/* Register Card Section End   */}
-
         {/* Card for Home, Events, News, Voting, Bus Route Start */}
         <View style = {styles.middleCard} >
           <TouchableHighlight onPress = {() => this.props.navigation.navigate('Home')}>
@@ -59,7 +58,7 @@ class CustomDrawerComponent extends Component {
           <TouchableHighlight onPress = {() => this.props.navigation.navigate('BusRoute')}>
             <View style = {styles.card} >
               <Icon name = "bus" size = {30} color = "#06525F" />
-              <Text  style = {styles.cardTopic} >Bus Route</Text>
+              <Text  style = {styles.cardTopic}>Bus Route</Text>
             </View>
           </TouchableHighlight> 
         </View>
@@ -76,12 +75,12 @@ class CustomDrawerComponent extends Component {
           <TouchableHighlight onPress = {() => this.props.navigation.navigate('Sponsers')}>
             <View style = {styles.card} >
               <Image source = {require('../images/Sponsers.png')} style = {styles.cardImage}/>
-              <Text  style = {styles.cardTopic} >Sponsers</Text>
+              <Text  style = {styles.cardTopic} >Sponsors</Text>
             </View>
           </TouchableHighlight>                    
           <TouchableHighlight onPress = {() => this.props.navigation.navigate('VisitUs')}>
             <View style = {styles.card} >
-              <Icon name = "share" size = {30} color = "#06525F" />
+              <Icon name = "globe" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Visit Us</Text>
             </View>
           </TouchableHighlight>               
@@ -89,6 +88,12 @@ class CustomDrawerComponent extends Component {
             <View style = {styles.card} >
               <Icon name = "users" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >About Us</Text>
+            </View>
+          </TouchableHighlight>  
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('Developers')}>
+            <View style = {styles.card} >
+              <Image source = {require('../images/developers.png')} style = {styles.cardImage}/>
+              <Text  style = {styles.cardTopic} >Developers</Text>
             </View>
           </TouchableHighlight>  
         </View>

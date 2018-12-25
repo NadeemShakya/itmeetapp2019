@@ -12,7 +12,6 @@ export default class MyWeb extends Component {
       headerTitleStyle: {
           fontSize: 22,
       }
-      
 }
   render() {
     return (
