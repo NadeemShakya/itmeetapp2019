@@ -71,9 +71,9 @@ export default class BusRouteScreen extends Component{
   
     render(){
       return(
-        <View>
+        <View style = {{paddingBottom: 70}}>
         <Header title = "Bus Route" onPress = {() => this.props.navigation.goBack()}/>
-        <ScrollView>
+        <ScrollView >
           <FlatList 
             data = {this.state.details}
             keyExtractor = {(item, index) => item.id }
