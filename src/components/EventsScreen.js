@@ -21,7 +21,7 @@ class EventsScreen extends Component {
             title: 'Hackathon',
             description: '\" Have an idea? Make your way through Hackathon to Minimum Viable Product (MVP) in 40 hours.\" \n\n Hackathon is an event where developers, programmers, and tech enthusiasts are aimed to develop something innovative and useful with the time constraint of 40 hours on the basis of the given theme. Participants will be given a workspace with the topnotch internet connection. There is no restriction in programming language and platform. \n\n Project has to be completed within the given time. In the end, a presentation has to be given by the participating team. The panel of judges will decide the winner based on creativity, innovation, completeness, and other critical factors',
             fee : 'Rs 500 per person',
-            date: '27 28 29 December',
+            date: '27, 28 & 29 December',
             time: '10am 27th December 2018',
             venue: 'Kathmandu University, Dhulikhel',
             prizes: [
@@ -31,11 +31,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['10000']
+                     data: ['10,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['5000']
+                     data: ['5,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
@@ -49,7 +49,7 @@ class EventsScreen extends Component {
             fee : 'Free',
             date: 'December 28th - 29th, 2018',
             time: '9:00',
-            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -74,7 +74,7 @@ class EventsScreen extends Component {
             fee : 'Free',
             date: '28 & 29 December',
             time: 'Participant will be notified via email',
-            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: 'Dataset 1', 
@@ -86,7 +86,7 @@ class EventsScreen extends Component {
                  },
                  {
                      title: 'Insight/Visualization',
-                     data: ['5000']
+                     data: ['5,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSdpvkFA9_bTkyTlTLtsfh9rOR_5DSZkWWLGY3JTP5aTqm_QiQ/viewform',
@@ -100,7 +100,7 @@ class EventsScreen extends Component {
             fee : 'Free',
             date: '28 29 December',
             time: 'Participant will be notified via email',
-            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -126,7 +126,7 @@ class EventsScreen extends Component {
             fee : 'Rs 150',
             date: '28th and 29th December 2018',
             time: 'Participant will be notified via email',
-            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -134,11 +134,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['7000']
+                     data: ['7,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['3000']
+                     data: ['3,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLScGGJ8arc4AeEWLYMU7ZhCb207lAW49euiIWixC_23A4uOkQA/viewform?fbclid=IwAR2kpW9KLf0lwUB3ETtFWjfoGGyyXuEqwNQYiHANSBt2M1dqM7uSSvA696c',
@@ -151,7 +151,7 @@ class EventsScreen extends Component {
             fee : 'Free',
             date: '29th December',
             time: '10am - 3pm',
-            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSc8k8CIIqj_04w5vZx1t6czLtMOYcLK6IEp2xp9gQLGNZONxA/viewform',
@@ -172,11 +172,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['5000']
+                     data: ['5,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['3000']
+                     data: ['3,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSdaS5t85Wd4IY122gfMJOWZHx0aP5bqF9NE9wLyZ94JpEi16g/viewform',
@@ -189,7 +189,7 @@ class EventsScreen extends Component {
             fee : 'Free',
             date: '28th 29th December',
             time: 'Participant will be notified via email',
-            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -211,7 +211,7 @@ class EventsScreen extends Component {
             fee : 'Free',
             date: 'To be notified via email',
             time: 'Participant will be notified via email',
-            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Prize', 
@@ -236,7 +236,7 @@ class EventsScreen extends Component {
             fee : 'Rs 500 per person ',
             date: '28th & 29th December',
             time: 'Dec 28 10:00 AM ~ Dec 29 04:00 PM (GMT+8, 48 hours)',
-            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -261,12 +261,12 @@ class EventsScreen extends Component {
             description: 'In this event, a group of four participants will be given a problem and the competitors will have to find the solution using the  Google search engine. The person who is able to find the highest number of solutions in shortest time will be awarded with attractive gift hampers. In IT Meet 2018, the Googling contest was held for one day. The participants were asked to answer 10 questions in 10 minutes using google and who ever answered it fast won. ',
             fee : 'Free',
             date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            time: '09:00',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: 'Prize', 
-                    data: ['The participant who answered the the most questions quickly won a gift hamper sponsored by Urban Girls.']
+                    data: ['The participant who answered the the most questions quickly won a gift hamper sponsored by ITTI.']
                 },
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSeoREd6y9X_k6uvIq9Am6vfA0OEFkIN-bc7UnL7wAZfRaPYgg/viewform',
@@ -281,7 +281,7 @@ class EventsScreen extends Component {
             fee : '300 / Team',
             date: '28th December',
             time: '09:00',
-            venue: 'Block 9',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -331,11 +331,11 @@ class EventsScreen extends Component {
         {
             id:'16',
             icon: require('../images/events/selfieCompetition.png'),
-            title: 'Selfie Competition',
+            title: 'Selfie Contest',
             description: 'No Info',
             fee : 'Free',
             date: '28th December',
-            time: '08:00',
+            time: '09:00',
             venue: 'Fountain',
             prizes: [
             ],
@@ -349,8 +349,8 @@ class EventsScreen extends Component {
             description: 'Alumni meet is designated towards the reunion of the alumni of KU. In IT Meet 2018, Alumni Meet was held on 6th January, Saturday. Alumni who registered for the event were present except for a few. The program was initiated for the first time last year and its continuation is done in this year’s IT Meet.',
             fee : 'Free',
             date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            time: '09:00',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
             ],
             link: 'https://itmeet.ku.edu.np/',
@@ -364,8 +364,8 @@ class EventsScreen extends Component {
             description: 'Participants will be given a platform where they will be able to pitch an idea on a topic which will be given to them by the organizers. They need to deliver their idea within a minute. The judges will select and award the best pitches under several criteria such as creativity, market feasibility, resources use, etc.',
             fee : 'Free',
             date: '28th December',
-            time: '08:00',
-            venue: 'Block 12 Room No: 102',
+            time: '09:00',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -373,11 +373,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['15000']
+                     data: ['15,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['10000']
+                     data: ['10,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSf_Ite5iiH09gMnuIXjDgCH3tLCWgc464o3DcqASBRYgo_f2Q/viewform?usp=send_form',
@@ -392,7 +392,7 @@ class EventsScreen extends Component {
             fee : 'Rs 500 per team',
             date: 'December 28th - 29th, 2018',
             time: 'Participant will be notified via email',
-            venue: 'Kathmandu University Central Campus, Dhulikhel',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: '1st Place', 
@@ -400,11 +400,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['15000']
+                     data: ['15,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['10000']
+                     data: ['10,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSdPZUkLiHkr_MdcfhgjhE5CuOKSBcuFtQp8M0GOOdjDuwtHug/viewform',
@@ -417,7 +417,7 @@ class EventsScreen extends Component {
             fee : 'Rs.250',
             date: '28th December',
             time: '09:00',
-            venue: 'Block 9',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: 'Fifa 1st Place', 
@@ -440,7 +440,7 @@ class EventsScreen extends Component {
             fee : 'Rs.2000 / Team',
             date: '27th December - 29th December',
             time: '09:00',
-            venue: 'Block 9',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: 'Dota 1st Place', 
@@ -463,7 +463,7 @@ class EventsScreen extends Component {
             fee : 'Squad: Rs.500, Solo: Rs.150',
             date: '28th December',
             time: '09:00',
-            venue: 'Block 9',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: 'Pubg Squad 1st Place', 
@@ -495,7 +495,7 @@ class EventsScreen extends Component {
             fee : 'Rs.1000/Team',
             date: '27th December - 29th December',
             time: '09:00',
-            venue: 'Block 9',
+            venue: 'Kathmandu University, Dhulikhel',
             prizes: [
                 {   
                     title: 'CS-GO 1st Place', 
