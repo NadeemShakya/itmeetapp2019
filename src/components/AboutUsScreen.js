@@ -7,7 +7,7 @@ class AboutUsScreen extends Component{
       return(
          <View style = {styles.container}>
                 {/* Header Component Start */}
-                    <Header title = "About US" onPress = {() => this.props.navigation.navigate('Events')}/>
+                    <Header title = "About US" onPress = {() => this.props.navigation.goBack()}/>
                 {/* Header Component End */} 
                 <ScrollView>
                     {/* Body Component Start */}

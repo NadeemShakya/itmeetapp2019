@@ -18,6 +18,7 @@ import QRCodeScanner from './src/components/QRCodeScanner';
 import Register from './src/components/webview';
 import NewsDetail from './src/components/NewsDetail';
 import Splash from './src/components/Splash';
+import Developer from './src/components/Developer';
 class Landing extends Component {
   render() {
     return(
@@ -44,7 +45,8 @@ const RootDrawer = createDrawerNavigator(
     EventDetail: EventDetail,
     QRCodeScanner: QRCodeScanner,
     NewsDetail: NewsDetail,
-    Splash: Splash
+    Splash: Splash,
+    Developer: Developer
   },
   // DrawerNavigatorConfg
   {
