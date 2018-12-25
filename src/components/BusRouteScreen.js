@@ -43,26 +43,27 @@ export default class BusRouteScreen extends Component{
                 to: `Dhulikhel`,
               },
               {
-                id: '5',
+                id: '6',
                 date: '28th & 29th  December',
                 time: '11:00 am',
                 from: `Ratnapark`,
                 to: `Dhulikhel`,
               },
               {
-                id: '5',
+                id: '7',
                 date: '28th & 29th  December',
                 time: '4:30 pm',
                 from: `Dhulikhel`,
                 to: `Ratnapark`,
               }, 
               {
-                id: '5',
+                id: '8',
                 date: '28th & 29th December',
                 time: '5:30 pm',
                 from: `Dhulikhel`,
                 to: `Ratnapark`,
-              },                                            
+              }, 
+                                                         
           ]
       }
   }
@@ -71,7 +72,7 @@ export default class BusRouteScreen extends Component{
   
     render(){
       return(
-        <View>
+        <View style = {styles.container}>
         <Header title = "Bus Route" onPress = {() => this.props.navigation.goBack()}/>
         <ScrollView>
           <FlatList 

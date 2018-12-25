@@ -83,7 +83,7 @@ export default class Voting extends Component {
                       margin:10
                     }}
                   />
-                  <Text style = {{textAlign:'center',fontSize:14}}><Text style = {{fontWeight:'bold'}}>Email:</Text>{item.email}</Text> 
+                  <Text style = {{textAlign:'center',fontSize:14}}><Text style = {{fontWeight:'bold'}}>Email: </Text>{item.email}</Text> 
                   <Text style = {{textAlign:'center',fontSize:14}}><Text style = {{fontWeight:'bold'}}>Contact: </Text>{item.contact}</Text>             
                 </View>  
               </View>      
@@ -137,26 +137,5 @@ const styles = StyleSheet.create({
         padding:10,
         
 
-    },
-    infoCard: {
-        marginTop:25,
-        flex:1,
-        height: 300
-    },
-    registerButton: {
-        backgroundColor:'#06525F',
-        height: 60,
-        justifyContent:'center',
-        alignItems:'center',
-        marginBottom: 30, 
-        width: '90%', 
-        marginLeft:'5%', 
-        borderRadius: 15, 
-        shadowColor: '#000000', 
-        shadowOffset: {width:0, height:3}, 
-        shadowOpacity:0.7, 
-        shadowRadius: 2, 
-        elevation:2
     }
-
 })

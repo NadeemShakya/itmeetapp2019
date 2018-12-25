@@ -21,7 +21,7 @@ class EventsScreen extends Component {
             title: 'Hackathon',
             description: '\" Have an idea? Make your way through Hackathon to Minimum Viable Product (MVP) in 40 hours.\" \n\n Hackathon is an event where developers, programmers, and tech enthusiasts are aimed to develop something innovative and useful with the time constraint of 40 hours on the basis of the given theme. Participants will be given a workspace with the topnotch internet connection. There is no restriction in programming language and platform. \n\n Project has to be completed within the given time. In the end, a presentation has to be given by the participating team. The panel of judges will decide the winner based on creativity, innovation, completeness, and other critical factors',
             fee : 'Rs 500 per person',
-            date: '27 28 29 December',
+            date: '27, 28 & 29 December',
             time: '10am 27th December 2018',
             venue: 'Kathmandu University, Dhulikhel',
             prizes: [
@@ -31,11 +31,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['10000']
+                     data: ['10,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['5000']
+                     data: ['5,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSfERSOse14KOVO_y_aXnflCL35FXw38dQYYNf4PBNLrPA4LHw/viewform',
@@ -86,7 +86,7 @@ class EventsScreen extends Component {
                  },
                  {
                      title: 'Insight/Visualization',
-                     data: ['5000']
+                     data: ['5,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSdpvkFA9_bTkyTlTLtsfh9rOR_5DSZkWWLGY3JTP5aTqm_QiQ/viewform',
@@ -134,11 +134,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['7000']
+                     data: ['7,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['3000']
+                     data: ['3,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLScGGJ8arc4AeEWLYMU7ZhCb207lAW49euiIWixC_23A4uOkQA/viewform?fbclid=IwAR2kpW9KLf0lwUB3ETtFWjfoGGyyXuEqwNQYiHANSBt2M1dqM7uSSvA696c',
@@ -172,11 +172,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['5000']
+                     data: ['5,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['3000']
+                     data: ['3,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSdaS5t85Wd4IY122gfMJOWZHx0aP5bqF9NE9wLyZ94JpEi16g/viewform',
@@ -266,7 +266,7 @@ class EventsScreen extends Component {
             prizes: [
                 {   
                     title: 'Prize', 
-                    data: ['The participant who answered the the most questions quickly won a gift hamper sponsored by Urban Girls.']
+                    data: ['The participant who answered the the most questions quickly won a gift hamper sponsored by ITTI.']
                 },
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSeoREd6y9X_k6uvIq9Am6vfA0OEFkIN-bc7UnL7wAZfRaPYgg/viewform',
@@ -331,7 +331,7 @@ class EventsScreen extends Component {
         {
             id:'16',
             icon: require('../images/events/selfieCompetition.png'),
-            title: 'Selfie Competition',
+            title: 'Selfie Contest',
             description: 'No Info',
             fee : 'Free',
             date: '28th December',
@@ -373,11 +373,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['15000']
+                     data: ['15,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['10000']
+                     data: ['10,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSf_Ite5iiH09gMnuIXjDgCH3tLCWgc464o3DcqASBRYgo_f2Q/viewform?usp=send_form',
@@ -400,11 +400,11 @@ class EventsScreen extends Component {
                 },
                  {
                      title: '2nd Place',
-                     data: ['15000']
+                     data: ['15,000']
                  },
                  {
                      title: '3rd Place',
-                     data: ['10000']
+                     data: ['10,000']
                  }
             ],
             link: 'https://docs.google.com/forms/d/e/1FAIpQLSdPZUkLiHkr_MdcfhgjhE5CuOKSBcuFtQp8M0GOOdjDuwtHug/viewform',
