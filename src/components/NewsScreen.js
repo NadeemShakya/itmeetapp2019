@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, TextInput,Image, TouchableOpacity,TouchableHighlight, ScrollView} from 'react-native';
+import {View, Text, TextInput,Image, NetInfo,TouchableHighlight, ScrollView} from 'react-native';
 import {AccordionList} from "accordion-collapse-react-native";
 
 
@@ -13,6 +13,9 @@ class NewsScreen extends Component {
             status: false};
 
     componentDidMount = () => {
+            NetInfo.isConnected.fetch().then(isConnected => {
+      if(isConnected)
+      {
         fetch('https://itmeet.ku.edu.np/api/v1/news')
         .then((response) => response.json())
         .then((responseJson) => {
@@ -20,10 +23,14 @@ class NewsScreen extends Component {
             this.setState({news: responseJson.data})
             console.log(this.state.news)
         })
-
         .catch((error) => {
             console.error(error)
         })
+      }else {
+        console.log("No Internet.")
+      }
+    })
+
     }
 
     // componentDidMount = () => {
@@ -86,14 +93,7 @@ class NewsScreen extends Component {
             <View>
                 <Header title="News" onPress={() => this.props.navigation.goBack()}/>
                 <ScrollView>
-                    <View style={styles.container}>
-                        <View style={styles.textInputContainer}>
-                            <TextInput style={styles.textInput} placeholder="Search..."/>
-                            <TouchableHighlight style={styles.searchImage}>
-                                <Image source={require('../images/Search.png')} style={{width:25,height:25}}/>
-                            </TouchableHighlight>
-                        </View>
-                    </View>
+                  
                     <AccordionList
                     list={this.state.news}
                     header = {this.head}
@@ -105,13 +105,6 @@ class NewsScreen extends Component {
         );
     }
 
-    // render(){
-    //     return(
-    //         <View>
-    //             <Text>{this.state.news[0]}</Text>
-    //         </View>
-    //     )
-    // }
 }
 
 const styles = {

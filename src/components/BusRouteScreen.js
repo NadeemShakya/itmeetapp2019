@@ -43,37 +43,22 @@ export default class BusRouteScreen extends Component{
                 to: `Dhulikhel`,
               },
               {
-<<<<<<< HEAD
-                id: '5',
-                date: '27th & 28th  December',
-=======
                 id: '6',
                 date: '28th & 29th  December',
->>>>>>> 25752951d389b2fe2d0e8364d1d3d0e0dcc7abb7
                 time: '11:00 am',
                 from: `Ratnapark`,
                 to: `Dhulikhel`,
               },
               {
-<<<<<<< HEAD
-                id: '5',
-                date: '27th & 28th  December',
-=======
                 id: '7',
                 date: '28th & 29th  December',
->>>>>>> 25752951d389b2fe2d0e8364d1d3d0e0dcc7abb7
                 time: '4:30 pm',
                 from: `Dhulikhel`,
                 to: `Ratnapark`,
               }, 
               {
-<<<<<<< HEAD
-                id: '5',
-                date: '27th & 28th December',
-=======
                 id: '8',
                 date: '28th & 29th December',
->>>>>>> 25752951d389b2fe2d0e8364d1d3d0e0dcc7abb7
                 time: '5:30 pm',
                 from: `Dhulikhel`,
                 to: `Ratnapark`,
@@ -87,11 +72,7 @@ export default class BusRouteScreen extends Component{
   
     render(){
       return(
-<<<<<<< HEAD
-        <View style = {{paddingBottom: 70}}>
-=======
         <View style = {styles.container}>
->>>>>>> 25752951d389b2fe2d0e8364d1d3d0e0dcc7abb7
         <Header title = "Bus Route" onPress = {() => this.props.navigation.goBack()}/>
         <ScrollView >
           <FlatList 
