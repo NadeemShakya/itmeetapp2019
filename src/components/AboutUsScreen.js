@@ -1,134 +1,84 @@
 import React, {Component} from 'react';
 import {View, Text, Image, StyleSheet, ScrollView} from 'react-native';
 import Header from './Header';
+
 class AboutUsScreen extends Component{
     render(){
       return(
-        <View> 
-        <Header title = "About Us" onPress = {() => this.props.navigation.goBack()} />        
-            <ScrollView>
-                <View style={styles.About_Us_Logo}>
-                    <Image style={{height: "100%", width: "100%"}}
-                    resizeMode="contain"
-                    source={require('../../images/IT_Meet.png')}/>
-                </View>
-                <View style={styles.About_Us_Details}>
-                    <View style={styles.Detail_Box}>
-                    <Text> 
-                        IT Meet is a non-profit tech program organized by students of DoCSE(Department of Computer
-                        Sciene and Engineering) of Kathmandu University.
-                    </Text>
-                    <Text> It is aimed to appreciate and uplift the growing IT market of Nepal.</Text>
+         <View style = {styles.container}>
+                {/* Header Component Start */}
+                    <Header title = "About US" onPress = {() => this.props.navigation.navigate('Events')}/>
+                {/* Header Component End */} 
+                <ScrollView>
+                    {/* Body Component Start */}
+                    <View style = {styles.body}>
+                        <View style = {styles.logo}>
+                            <Image source = {require('../../images/logo.png')} style = {styles.image}/>
+                            <Text style = {{textAlign:'center'}}>IT MEET</Text>
+                        </View>
+                        <View style = {{padding:'5%'}}>
+                            {/* Event Description Goes here */}
+                            <Text style = {{fontSize: 16, lineHeight: 20}}>
+                                IT MEET is the largest non-profit tech meet up organized at University level by the Department of Computer Science and Engineering (DoCSE) of Kathmandu University, held annually in Nepal. It is a multitude of conventions and events that aim to appreciate and celebrate the growing IT market in Nepal by rewarding and promoting brilliant student bodies in this field through various competitions. IT Meet blends together the commercial and educational aspect of information technology by bringing together people who are already in this field or those who are thinking of entering this field and creating a melting pot of people to get educated about IT.
+                            </Text>
+                        </View> 
                     </View>
+                {/* Body Component End      */}
+                </ScrollView>
                 </View>
-            </ScrollView>
-        </View>
         );
     }
-  }
-  const styles = StyleSheet.create({
-    container:{
-      flex: 1,
-      backgroundColor: "#EAECEE",
-      alignItems: "center"
+}
+
+const styles = StyleSheet.create({
+    container: {
+        backgroundColor:'#f2f2f2',
+        flex:1,
     },
-  
-    // Sponsor StyleSheet
-  
-    Sponsor:{
-      width: 320,
-      height: 200,
-      top: '3%',
-      marginTop: "5%",
-      backgroundColor: "white",
-      elevation: 1,
+    header: {
+        backgroundColor:'#06525F',
+        flexDirection: 'row',
+        height: 60,
+        alignItems: 'center',  
+        paddingLeft:15
     },
-    Sponsor_Header:{
-      height: 40,
-      width: "100%",
-      backgroundColor: "white",
-      elevation: 1,
-      alignItems: "center",
-      justifyContent: "center"
+    body: {
+        backgroundColor:'#fff',
+        marginTop:100,
+        marginLeft:15,
+        marginRight: 15,
+        marginBottom: 10, 
+        borderRadius:3,
+        shadowColor:'rgba(0, 0, 0, 0.7)',
+        elevation:1,
     },
-    Sponsor_Logo:{
-      height: 150,
-      width: "100%", 
-      backgroundColor: 'white', 
-      flexDirection: 'row', 
-      justifyContent: "flex-start", 
-      alignItems: "flex-start", 
-      flexWrap: 'wrap'
+    image: {
+        height:90,
+        width: 90,
+        resizeMode: 'contain'
     },
-  
-    Sponsor_Logo_Image:{
-      height: 60, 
-      width: 60,
-      marginLeft: 32, 
-      marginTop: 10,
-      borderWidth: 0.5,
-      borderColor: "#CCD1D1"
+    logo: {
+        shadowColor:'rgba(0,0,0,0.5)',
+        elevation:2,
+        marginRight: 'auto',
+        marginLeft: 'auto',
+        marginBottom: 10,
+        justifyContent:'space-evenly',
+        alignItems:'center',
+        backgroundColor:'#fff',
+        height: 120,
+        width: 120,
+        marginTop:-60,
+        borderRadius: 3,
+        padding:10,
+
     },
-  
-    // About Us StyleSheet
-  
-    Header_Font:{
-      fontSize: 20,
-      color: "#0E6655"
+    infoCard: {
+        marginTop:25,
+        flex:1,
+        height: 300
     },
-  
-    About_Us_Logo:{
-      height: "25%",
-      width: "40%",
-      top: "15%",
-      backgroundColor: "white",
-      zIndex: 1,
-      elevation: 3
-    },
-    About_Us_Details:{
-      height: "65%",
-      width: "90%",
-      top: "2%",
-      backgroundColor: "white",
-      elevation: 2,
-      alignItems: 'center',
-    },
-    Detail_Box:{
-      height: "70%",
-      width: "95%",
-      backgroundColor: 'white',
-      marginTop: '27%',
-      alignItems: 'center',
-      flexWrap: 'wrap'
-    },
-  
-    // Route StyleSheet
-  
-    Route:{
-      height: 330,
-      width: 320,
-      marginTop: "10%",
-      elevation: 1,
-      backgroundColor: "white"
-    },
-    Route_Header:{
-      height: "25%",
-      width: "100%",
-      elevation: 1,
-      backgroundColor: "white",
-      alignItems: "center",
-      justifyContent: "center"
-    },
-    Route_Details:{
-      height: "100%",
-      width: "100%",
-      backgroundColor: 'white',
-      top: '0%',
-    },
-    Way_Header:{
-      color: "#3498DB",
-      fontSize: 17,
-      marginTop: '5%'
-    }
-  });
+    
+
+})
 export default AboutUsScreen;
