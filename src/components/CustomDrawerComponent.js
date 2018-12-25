@@ -8,7 +8,6 @@ import {
     Image,
     StatusBar
 } from 'react-native';
-import {NavigationActions} from 'react-navigation';
 import Icon from 'react-native-vector-icons/FontAwesome';
 // IT MEET logo
 import logo from '../images/logo.png';
@@ -16,12 +15,7 @@ import logo from '../images/logo.png';
 import navigationBackground from '../images/navigationBackground.jpg';
 
 class CustomDrawerComponent extends Component {
-  navigateToScreen = (route) => () => {
-    const navigateAction = NavigationActions.navigate({
-      routeName: route
-    });
-    this.props.navigation.dispatch(navigateAction);
-  }  
+ 
   render() {
     return(
       <ScrollView style = {{backgroundColor: '#f2f2f2', height: '100%'}}>
@@ -33,7 +27,7 @@ class CustomDrawerComponent extends Component {
         </View> 
         {/* Register Card Section Start */}
         <View style = {styles.topCard}>
-          <TouchableHighlight onPress = {this.navigateToScreen('Register')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('Register')}>
             <View style = {styles.card} >
               <Image source = {require('../images/Register.png')} style = {styles.cardImage}/>
               <Text  style = {styles.cardTopic} >Register</Text>
@@ -44,7 +38,7 @@ class CustomDrawerComponent extends Component {
 
         {/* Card for Home, Events, News, Voting, Bus Route Start */}
         <View style = {styles.middleCard} >
-          <TouchableHighlight onPress = {this.navigateToScreen('Home')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('Home')}>
             <View style = {styles.card} >
               <Icon name = "home" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Home</Text>
@@ -56,19 +50,13 @@ class CustomDrawerComponent extends Component {
               <Text  style = {styles.cardTopic} >Events</Text>
             </View>
           </TouchableHighlight>       
-          <TouchableHighlight onPress = {this.navigateToScreen('News')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('News')}>
             <View style = {styles.card} >
               <Image source = {require('../images/News.png')} style = {styles.cardImage}/>
               <Text  style = {styles.cardTopic} >News</Text>
             </View>
           </TouchableHighlight>        
-          <TouchableHighlight onPress = {this.navigateToScreen('Voting')}>
-            <View style = {styles.card} >
-              <Image source = {require('../images/Voting.png')} style = {styles.cardImage}/>
-              <Text  style = {styles.cardTopic} >Voting</Text>
-            </View>
-          </TouchableHighlight> 
-          <TouchableHighlight onPress = {this.navigateToScreen('BusRoute')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('BusRoute')}>
             <View style = {styles.card} >
               <Icon name = "bus" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Bus Route</Text>
@@ -79,25 +67,25 @@ class CustomDrawerComponent extends Component {
 
         {/* Card for Share, Sponsers, Visit Us, About Us Start */}
         <View style = {styles.bottomCard}>
-          <TouchableHighlight onPress = {this.navigateToScreen('Share')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('Share')}>
             <View style = {styles.card} >
               <Icon name = "share" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Share</Text>
             </View>
           </TouchableHighlight>   
-          <TouchableHighlight onPress = {this.navigateToScreen('Sponsers')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('Sponsers')}>
             <View style = {styles.card} >
               <Image source = {require('../images/Sponsers.png')} style = {styles.cardImage}/>
               <Text  style = {styles.cardTopic} >Sponsers</Text>
             </View>
           </TouchableHighlight>                    
-          <TouchableHighlight onPress = {this.navigateToScreen('VisitUs')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('VisitUs')}>
             <View style = {styles.card} >
               <Icon name = "share" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >Visit Us</Text>
             </View>
           </TouchableHighlight>               
-          <TouchableHighlight onPress = {this.navigateToScreen('AboutUs')}>
+          <TouchableHighlight onPress = {() => this.props.navigation.navigate('AboutUs')}>
             <View style = {styles.card} >
               <Icon name = "users" size = {30} color = "#06525F" />
               <Text  style = {styles.cardTopic} >About Us</Text>

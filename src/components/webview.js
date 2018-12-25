@@ -17,7 +17,7 @@ export default class MyWeb extends Component {
   render() {
     return (
       <WebView
-        source={{uri: 'https://docs.google.com/forms/d/e/1FAIpQLSeAkpP1cipvw8JO7YRmRHjnY40Ay3cOQ9h99Mx2zR_xmdVm8A/viewform'}}
+        source={{uri: 'https://itmeet.ku.edu.np/register'}}
       />
     );
   }
