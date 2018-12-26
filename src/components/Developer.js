@@ -7,7 +7,8 @@ import {
     TouchableOpacity,
     TouchableHighlight,
     ScrollView,
-    FlatList
+    FlatList,
+    Linking
 } from 'react-native';
 import Header from './Header';
 
@@ -88,7 +89,13 @@ export default class Voting extends Component {
                 </View>  
               </View>      
             }
-          /> 
+          />
+          {/*Privacy Policy*/}
+          <View style = {{marginTop: 20,marginBottom:10}}>
+                            <TouchableHighlight underlayColor = 'transparent' onPress={() => Linking.openURL('https://rrupeshh.github.io/itmeet/')} >
+                                <Text style = {{color: '#616263', fontSize:20,textAlign:'center'}}>Privacy Policy</Text>
+                            </TouchableHighlight>
+                        </View>
         </ScrollView>       
       </View>
     );
@@ -137,5 +144,11 @@ const styles = StyleSheet.create({
         padding:10,
         
 
-    }
+    },
+    registerButton: { 
+      width: '60%', 
+      shadowColor: '#e1e1e1', 
+      shadowOffset: {width:0, height:3}, 
+      shadowOpacity:0.7, 
+  }
 })
